@@ -343,11 +343,19 @@ const FormField: ISwapFormField = {
           });
           handleTaxTableStatistics(_this, dataArray);
         } else if (dStatus === '1') {
-          _this.setState({
-            listData: [...res.dataArray],
-            current_page: res.currentPage,
-            total2: res.totalCount,
-          });
+          if (res.dataArray.length === 0) {
+            _this.setState({
+              listData: [],
+              current_page: 1,
+              total2: 0,
+            });
+          } else {
+            _this.setState({
+              listData: [...res.dataArray],
+              current_page: res.currentPage,
+              total2: res.totalCount,
+            });
+          }
         }
         if (_this.state.msgdata === '1') {
           notification.open({

@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5624004123be09d88590";
+/******/ 	var hotCurrentHash = "4bed096bb44261f8db23";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -11628,9 +11628,9 @@ module.exports.formatError = function(err) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/zhukuai/Desktop/suite-demo-micro-4/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333");
-__webpack_require__(/*! /Users/zhukuai/Desktop/suite-demo-micro-4/node_modules/webpack/hot/dev-server.js */"./node_modules/webpack/hot/dev-server.js");
-module.exports = __webpack_require__(/*! /Users/zhukuai/Desktop/suite-demo-micro-4/.debug/config.ts */"./.debug/config.ts");
+__webpack_require__(/*! /Users/zhukuai/Desktop/demo_suite-2.0/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333");
+__webpack_require__(/*! /Users/zhukuai/Desktop/demo_suite-2.0/node_modules/webpack/hot/dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+module.exports = __webpack_require__(/*! /Users/zhukuai/Desktop/demo_suite-2.0/.debug/config.ts */"./.debug/config.ts");
 
 
 /***/ }),

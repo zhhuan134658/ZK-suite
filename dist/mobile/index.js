@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("React"), require("antd"), require("AntdMobile"), require("ReactDOM"));
+		module.exports = factory(require("antd"), require("AntdMobile"), require("React"), require("ReactDOM"));
 	else if(typeof define === 'function' && define.amd)
-		define(["React", "antd", "AntdMobile", "ReactDOM"], factory);
+		define(["antd", "AntdMobile", "React", "ReactDOM"], factory);
 	else if(typeof exports === 'object')
-		exports["@ali/suite-demo"] = factory(require("React"), require("antd"), require("AntdMobile"), require("ReactDOM"));
+		exports["@ali/suite-demo"] = factory(require("antd"), require("AntdMobile"), require("React"), require("ReactDOM"));
 	else
-		root["@ali/suite-demo"] = factory(root["React"], root["antd"], root["AntdMobile"], root["ReactDOM"]);
-})(window, function(__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_antd__, __WEBPACK_EXTERNAL_MODULE_antd_mobile__, __WEBPACK_EXTERNAL_MODULE_react_dom__) {
+		root["@ali/suite-demo"] = factory(root["antd"], root["AntdMobile"], root["React"], root["ReactDOM"]);
+})(window, function(__WEBPACK_EXTERNAL_MODULE_antd__, __WEBPACK_EXTERNAL_MODULE_antd_mobile__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5624004123be09d88590";
+/******/ 	var hotCurrentHash = "4bed096bb44261f8db23";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -4908,7 +4908,7 @@ var purColumns = [{
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466822
+      // 1649315824173
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -5742,7 +5742,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466715
+      // 1649315824185
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -8861,7 +8861,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466603
+      // 1649315824091
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -9117,7 +9117,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466587
+      // 1649315824078
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -10018,7 +10018,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466578
+      // 1649315824132
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -14473,7 +14473,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466661
+      // 1649315824125
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -16616,7 +16616,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466828
+      // 1649315825786
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -18384,7 +18384,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466695
+      // 1649315824119
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -22881,7 +22881,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466620
+      // 1649315824113
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -31346,7 +31346,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466703
+      // 1649315824097
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35092,7 +35092,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466834
+      // 1649315824181
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35361,7 +35361,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466631
+      // 1649315824086
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35875,7 +35875,7 @@ var SwapDemoSuite = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1648709466540
+      // 1649315824012
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -73271,9 +73271,9 @@ module.exports.formatError = function(err) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/zhukuai/Desktop/suite-demo-micro-4/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333");
-__webpack_require__(/*! /Users/zhukuai/Desktop/suite-demo-micro-4/node_modules/webpack/hot/dev-server.js */"./node_modules/webpack/hot/dev-server.js");
-module.exports = __webpack_require__(/*! /Users/zhukuai/Desktop/suite-demo-micro-4/.debug/runtime/mobile.tsx */"./.debug/runtime/mobile.tsx");
+__webpack_require__(/*! /Users/zhukuai/Desktop/demo_suite-2.0/node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:3333");
+__webpack_require__(/*! /Users/zhukuai/Desktop/demo_suite-2.0/node_modules/webpack/hot/dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+module.exports = __webpack_require__(/*! /Users/zhukuai/Desktop/demo_suite-2.0/.debug/runtime/mobile.tsx */"./.debug/runtime/mobile.tsx");
 
 
 /***/ }),
