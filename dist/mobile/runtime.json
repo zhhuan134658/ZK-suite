@@ -1,0 +1,18 @@
+[
+  {
+    "id": "React@16",
+    "url": "https://g.alicdn.com/code/lib/react/16.13.1/umd/react.production.min.js"
+  },
+  {
+    "id": "ReactDOM@16",
+    "url": "https://g.alicdn.com/code/lib/react-dom/16.13.1/umd/react-dom.production.min.js"
+  },
+  {
+    "id": "antd@4",
+    "url": "https://cdn.bootcdn.net/ajax/libs/antd/4.16.9/antd.min.js"
+  },
+  {
+    "id": "AntdMobile@4",
+    "url": "https://cdn.bootcdn.net/ajax/libs/antd/4.16.9/antd.min.js"
+  }
+]

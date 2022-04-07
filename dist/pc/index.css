@@ -1,0 +1,247 @@
+.isvzhukuaiwarehousing .my-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+}
+.isvzhukuaiwarehousing .my-drawer .am-drawer-sidebar {
+  height: 100%;
+  background-color: #ffffff;
+}
+.isvzhukuaiwarehousing .noWrap .am-list-content {
+  white-space: normal !important;
+}
+.isvzhukuaiwarehousing .pc-custom-field-wrap {
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 100%;
+}
+.isvzhukuaiwarehousing .pc-custom-field-wrap .label {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+.isvzhukuaiwarehousing .newside_new {
+  background: #fff;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.isvzhukuaiwarehousing .editable-cell {
+  position: relative;
+}
+.isvzhukuaiwarehousing .ant-table-cell {
+  height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 45px;
+}
+.isvzhukuaiwarehousing .editable-cell-value-wrap {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-left: -16px;
+  margin-right: -16px;
+  cursor: pointer;
+}
+.isvzhukuaiwarehousing .editable-cell-value-input {
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  padding-right: 0px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.isvzhukuaiwarehousing .editable-row:hover .editable-cell-value-wrap {
+  padding: 0;
+  border-radius: 0px !important;
+  border: none !important;
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
+          box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
+}
+.isvzhukuaiwarehousing [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+  outline: slateblue;
+}
+.isvzhukuaiwarehousing .ant-input-group-wrapper {
+  background: #fafafa;
+  border-radius: 2px;
+}
+.isvzhukuaiwarehousing .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+  width: 99%;
+}
+.isvzhukuaiwarehousing .field-wrapper .label {
+  margin-top: 10px;
+}
+
+.isvzhukuaiwarehousing .SelectProField_class .pc-custom-field-wrap {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.isvzhukuaiwarehousing .SelectProField_class .pc-custom-field-wrap .label {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+.isvzhukuaiwarehousing .SelectProField_class .newside_new {
+  background: #fff;
+  height: 680px;
+  overflow-y: scroll;
+}
+
+.isvzhukuaiwarehousing .SelectProtwoField_class .pc-custom-field-wrap {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.isvzhukuaiwarehousing .SelectProtwoField_class .pc-custom-field-wrap .label {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+.isvzhukuaiwarehousing .SelectProtwoField_class .newside_new {
+  background: #fff;
+  height: 680px;
+  overflow-y: scroll;
+}
+
+.isvzhukuaiwarehousing .TestCollectionField_class .pc-custom-field-wrap {
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 100%;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .pc-custom-field-wrap .label {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .newside_new {
+  background: #fff;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-cell {
+  position: relative;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-table-cell {
+  height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 45px;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-cell-value-wrap {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-left: -16px;
+  margin-right: -16px;
+  cursor: pointer;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-cell-value-input {
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  padding-right: 0px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-row:hover .editable-cell-value-wrap {
+  padding: 0;
+  border-radius: 0px !important;
+  border: none !important;
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
+          box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
+}
+.isvzhukuaiwarehousing .TestCollectionField_class [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+  outline: slateblue;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper {
+  background: #fafafa;
+  border-radius: 2px;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+  width: 99%;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper {
+  background: #fafafa;
+  border-radius: 2px;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+  width: 99%;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-tabs .ant-tabs-nav {
+  width: 100%;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-tabs .ant-tabs-nav .ant-tabs-nav-list {
+  width: 100%;
+}
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-tabs .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
+  width: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.isvzhukuaiwarehousing .TestSheField_class .pc-custom-field-wrap {
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 100%;
+}
+.isvzhukuaiwarehousing .TestSheField_class .pc-custom-field-wrap .label {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+.isvzhukuaiwarehousing .TestSheField_class .newside_new {
+  background: #fff;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.isvzhukuaiwarehousing .TestSheField_class .editable-cell {
+  position: relative;
+}
+.isvzhukuaiwarehousing .TestSheField_class .ant-table-cell {
+  height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 45px;
+}
+.isvzhukuaiwarehousing .TestSheField_class .editable-cell-value-wrap {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-left: -16px;
+  margin-right: -16px;
+  cursor: pointer;
+}
+.isvzhukuaiwarehousing .TestSheField_class .editable-cell-value-input {
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  padding-right: 0px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.isvzhukuaiwarehousing .TestSheField_class .editable-row:hover .editable-cell-value-wrap {
+  padding: 0;
+  border-radius: 0px !important;
+  border: none !important;
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
+          box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
+}
+.isvzhukuaiwarehousing .TestSheField_class [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+  outline: slateblue;
+}
+.isvzhukuaiwarehousing .TestSheField_class .ant-input-group-wrapper {
+  background: #fafafa;
+  border-radius: 2px;
+}
+.isvzhukuaiwarehousing .TestSheField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+  width: 99%;
+}
+
+
+/*# sourceMappingURL=index.css.map*/
