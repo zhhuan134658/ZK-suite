@@ -95,7 +95,13 @@ const FormField: ISwapFormField = {
     const onFinishFailed = (errorInfo: any) => {
       console.log('Failed:', errorInfo);
     };
-
+    form.onFieldExtendValueChange('CorpSupplieryi', (value: string) => {
+      if (this.state.inputvalue !== value) {
+        this.setState({
+          inputvalue: value,
+        });
+      }
+    });
     const sidebar = (
       <div style={{ width: '100vw' }}>
         <SearchBar

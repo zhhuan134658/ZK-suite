@@ -564,11 +564,25 @@ const FormField: ISwapFormField = {
         title: '参考价格',
         dataIndex: 'refer_price',
         editable: true,
-        render: (_, record: any) => (
-          <Tooltip placement="topLeft" title={record.refer_price}>
-            <span>{record.refer_price}</span>
-          </Tooltip>
-        ),
+
+        render: (_, record: any) => {
+          let n1 = Number(record.refer_price);
+
+          if (isNaN(n1)) {
+            record.judge = true;
+            return (
+              <Tooltip placement="topLeft" title="该单元格应该为数字">
+                <span style={{ color: '#ff0000' }}>{record.refer_price}</span>
+              </Tooltip>
+            );
+          } else {
+            return (
+              <Tooltip placement="topLeft" title={record.refer_price}>
+                <span>{record.refer_price}</span>
+              </Tooltip>
+            );
+          }
+        },
       },
       {
         title: '小计(元)',
@@ -788,7 +802,7 @@ const FormField: ISwapFormField = {
                   okText="是"
                   cancelText="否"
                 >
-                  <span>重置明细</span>
+                  <span>重置123明细</span>
                 </Popconfirm>
               </div>
             </div>

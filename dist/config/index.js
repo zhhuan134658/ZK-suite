@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "4bed096bb44261f8db23";
+/******/ 	var hotCurrentHash = "030ab7110f0726a202d3";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -887,46 +887,16 @@ __webpack_require__.r(__webpack_exports__);
   "isSuite": true,
   "componentName": "DDBizSuite",
   "category": "suite_test",
-  "name": "筑快OA-DEMOtest",
-  "description": "筑快OA 2.0测试版本DEMO",
+  "name": "筑快OA 2.0测试版本DEMO_Rest",
+  "description": "筑快OA 2.0测试版本DEMO_Rest",
   "icon": "",
   "props": {
-    "bizType": "isv.zhukuai.warehousing",
-    "bizAlias": "isv.zhukuai.warehousing",
+    "bizType": "isv.zhukuai.zkgl",
+    "bizAlias": "isv.zhukuai.zkgl",
     "extract": true,
     "isThirdSuite": true
   },
   "children": [{
-    "componentName": "FormRelateField",
-    "props": {
-      "bizAlias": "relation",
-      "id": "testguan",
-      "placeholder": "请填写方式",
-      "label": "表单关联",
-      "required": false,
-      "fields": [{
-        "componentName": "TextField",
-        "props": {
-          "id": "test",
-          "label": "请假事由",
-          "placeholder": "请输入请假事由",
-          "required": false
-        }
-      }],
-      "dataSource": {
-        "params": {
-          "filter": ""
-        },
-        "target": {
-          "appType": 0,
-          "appUuid": "58708",
-          "bizType": "isv.zhukuai.zkgl",
-          "formCode": "PROC-2944B5CE-68CA-41C8-8106-F177CE7B71C5"
-        },
-        "type": "form"
-      }
-    }
-  }, {
     "componentName": "MoneyField",
     "props": {
       "bizAlias": "Moneytest",
@@ -939,7 +909,7 @@ __webpack_require__.r(__webpack_exports__);
     "componentName": "MoneyField",
     "props": {
       "bizAlias": "Moneybei",
-      "placeholder": "请输入",
+      "placeholder": "请输入1",
       "label": "备用金金额（元）大写",
       "notUpper": "0"
     }
@@ -1045,15 +1015,6 @@ __webpack_require__.r(__webpack_exports__);
       "placeholder": "请选择",
       "options": [],
       "label": "单选框"
-    }
-  }, {
-    "componentName": "CommonField",
-    "props": {
-      "bizAlias": "SelectDeposit",
-      "commonBizType": "SelectDepositField",
-      "required": false,
-      "placeholder": "请输入",
-      "label": "保证金付款登记-项目（废弃）"
     }
   }, {
     "componentName": "CommonField",
@@ -1454,6 +1415,107 @@ __webpack_require__.r(__webpack_exports__);
       "placeholder": "请输入",
       "label": "物资招标添加物资材料"
     }
+  }, {
+    "componentName": "TableField",
+    "props": {
+      "bizAlias": "TestBidding_Table",
+      "tableViewMode": "table",
+      "verticalPrint": false,
+      "actionName": "增加明细",
+      "statField": [],
+      "label": "物资招标明细",
+      "id": "TestBidding-JT435H4C8"
+    },
+    "children": [{
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "TestBidding_name",
+        "disabled": true,
+        "placeholder": "请输入",
+        "label": "物资名称",
+        "id": "TestBidding_name"
+      }
+    }, {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "TestBidding_size",
+        "disabled": true,
+        "placeholder": "请输入",
+        "label": "规格型号",
+        "id": "TestBidding_size"
+      }
+    }, {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "TestBidding_unit",
+        "disabled": true,
+        "placeholder": "请输入",
+        "label": "单位",
+        "id": "TestBidding_unit"
+      }
+    }, {
+      "componentName": "NumberField",
+      "props": {
+        "bizAlias": "TestBidding_number",
+        "placeholder": "请输入数字",
+        "label": "估算数量",
+        "id": "TestBidding_number"
+      }
+    }, {
+      "componentName": "NumberField",
+      "props": {
+        "bizAlias": "TestBidding_number2",
+        "placeholder": "请输入数字",
+        "label": "估算数量2",
+        "id": "TestBidding_number2"
+      }
+    }, {
+      "componentName": "NumberField",
+      "props": {
+        "bizAlias": "TestBidding_number1",
+        "placeholder": "请输入数字",
+        "label": "估算数量1",
+        "id": "TestBidding_number1",
+        "formula": [{
+          "id": "TestBidding_number"
+        }, "*", {
+          "id": "TestBidding_number2"
+        }]
+      }
+    }, {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "TestBidding_purchase_unit",
+        "placeholder": "请输入",
+        "label": "物资采购单位",
+        "id": "TestBidding_purchase_unit"
+      }
+    }, {
+      "componentName": "DDDateField",
+      "props": {
+        "bizAlias": "TestBidding_purchase_riqi",
+        "placeholder": "请选择",
+        "format": "yyyy-MM-dd",
+        "label": "采购日期",
+        "id": "TestBidding_purchase_riqi"
+      }
+    }, {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "TestBidding_purchase_address",
+        "placeholder": "请输入",
+        "label": "采购地点",
+        "id": "TestBidding_purchase_address"
+      }
+    }, {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "TestBidding_candidate_list",
+        "placeholder": "请输入",
+        "label": "候选供应商名单",
+        "id": "TestBidding_candidate_list"
+      }
+    }]
   }, {
     "componentName": "CommonField",
     "props": {
@@ -2170,21 +2232,21 @@ __webpack_require__.r(__webpack_exports__);
     "props": {
       "bizAlias": "TextFieldone",
       "placeholder": "请输入",
-      "label": "单行输入框"
+      "label": "单行输入框1"
     }
   }, {
     "componentName": "TextField",
     "props": {
       "bizAlias": "TextFieldtwo",
       "placeholder": "请输入",
-      "label": "单行输入框"
+      "label": "单行输入框2"
     }
   }, {
     "componentName": "TextField",
     "props": {
       "bizAlias": "TextFieldthree",
       "placeholder": "请输入",
-      "label": "单行输入框"
+      "label": "单行输入框3"
     }
   }, {
     "componentName": "TextField",

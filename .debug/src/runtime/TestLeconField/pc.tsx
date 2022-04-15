@@ -930,7 +930,7 @@ const FormField: ISwapFormField = {
               placeholder="自动计算"
             />
           </div>
-          <Modal className="isvzhukuaiwarehousing" 
+          <Modal className="isvzhukuaizkgl" 
             title="关联"
             width={1000}
             visible={this.state.isModalVisible}
@@ -986,7 +986,7 @@ const FormField: ISwapFormField = {
           </Modal>
           {/* 树形 */}
 
-          <Modal className="isvzhukuaiwarehousing" 
+          <Modal className="isvzhukuaizkgl" 
             title="选择物资"
             width={1000}
             visible={this.state.isModalVisibletree}

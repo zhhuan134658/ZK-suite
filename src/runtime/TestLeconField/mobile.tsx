@@ -113,6 +113,24 @@ const FormField: ISwapFormField = {
     const _this = this;
 
     return {
+      checkClick(item: any) {
+        console.log('0000005');
+        const cDataid = [item.id];
+        const newdate = _this.state.allData;
+        newdate.ck_name = item.name;
+        newdate.type = 0;
+        newdate.page = 1;
+        newdate.isHouse = '2';
+        const dtar = item.name;
+
+        console.log(cDataid);
+        newdate.rk_id = [_this.state.detdate, ...cDataid];
+        _this.asyncSetFieldProps(newdate, 1);
+        _this.setState({
+          chenkdata: dtar,
+          showElem3: 'none',
+        });
+      },
       iconClick() {
         _this.setState({
           chenkdata: '',

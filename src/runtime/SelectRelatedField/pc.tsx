@@ -77,6 +77,8 @@ const FormField: ISwapFormField = {
         _this.setState({ Inputvalue: '' });
         form.setFieldValue('SelectRelated', '');
         form.setFieldExtendValue('SelectRelated', '');
+        form.setFieldValue('Moneytest', '');
+        form.setFieldExtendValue('Moneytest', '');
       },
       handleAddNew() {
         _this.setState({
@@ -288,22 +290,15 @@ const FormField: ISwapFormField = {
       },
       rowClick(record: any) {
         const { form } = _this.props;
-        if (record.extend_two) {
-          this.setState({ Inputvalue: record.extend_two });
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        } else if (record.extend_five) {
-          this.setState({ Inputvalue: record.extend_five });
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        } else if (record.extend_five) {
-          this.setState({ Inputvalue: record.extend_five });
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        }
-        this.setState({ isModalVisible: false }, () => {
-          form.setFieldValue('Conmoney', record.money);
-        });
+
+        _this.setState({ Inputvalue: record.title });
+
+        form.setFieldValue('SelectRelated', record.title);
+        form.setFieldExtendValue('SelectRelated', record.title);
+        form.setFieldValue('Moneytest', record.money);
+        form.setFieldExtendValue('Moneytest', record.money);
+        console.log('record', record);
+        _this.setState({ isModalVisible: false });
       },
     };
   },

@@ -331,9 +331,9 @@ const FormField: ISwapFormField = {
         handleTaxTableStatistics(_this, list);
       },
       onInputchange(types, index, e) {
-        console.log(types, index, e, this);
-        const arr = this.state.materialList;
-        console.log('120', this.state.materialList);
+        console.log(types, index, e, _this);
+        const arr = _this.state.materialList;
+        console.log('120', _this.state.materialList);
 
         const arrindex = e ? e : '';
         const newindex = index;
@@ -365,7 +365,7 @@ const FormField: ISwapFormField = {
           }),
         ];
         const totalMoney = newarr2.reduce(fpAdd, 0);
-        this.setState({
+        _this.setState({
           materialList: [...arr],
           Inputmoney1:
             totalMoney.toFixed(2) <= 0.005 ? '' : totalMoney.toFixed(2),
@@ -1052,7 +1052,7 @@ const FormField: ISwapFormField = {
           {/*  */}
 
           {/* 合计 */}
-          <div className="field-wrapper">
+          {/* <div className="field-wrapper">
             <div className="m-group m-group-mobile">
               <div className="m-field-wrapper">
                 <div className="m-field m-field-mobile m-select-field">
@@ -1075,14 +1075,14 @@ const FormField: ISwapFormField = {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="field-wrapper">
             <div className="m-group m-group-mobile">
               <div className="m-field-wrapper">
                 <div className="m-field m-field-mobile m-select-field">
                   <div className="m-field-head">
                     <div className="m-field-label">
-                      <span>含税金额合计(元)</span>
+                      <span>合计(元)</span>
                     </div>
                   </div>
                   <div className="m-field-box">
@@ -1103,7 +1103,7 @@ const FormField: ISwapFormField = {
 
           {/* 物资明细 */}
           {createPortal(
-            <Drawer className="isvzhukuaiwarehousing" 
+            <Drawer className="isvzhukuaizkgl" 
               open={true}
               style={{
                 minHeight: document.documentElement.clientHeight,
@@ -1126,7 +1126,7 @@ const FormField: ISwapFormField = {
             document.getElementById('MF_APP'),
           )}
           {createPortal(
-            <Drawer className="isvzhukuaiwarehousing" 
+            <Drawer className="isvzhukuaizkgl" 
               open={true}
               style={{
                 minHeight: document.documentElement.clientHeight,
@@ -1149,7 +1149,7 @@ const FormField: ISwapFormField = {
             document.getElementById('MF_APP'),
           )}
           {createPortal(
-            <Drawer className="isvzhukuaiwarehousing" 
+            <Drawer className="isvzhukuaizkgl" 
               open={true}
               style={{
                 minHeight: document.documentElement.clientHeight,

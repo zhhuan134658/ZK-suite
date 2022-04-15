@@ -4,7 +4,6 @@ import createReactClass from "create-react-class";
 import SelectProField from "./SelectProField/pc";
 import SelectProtwoField from "./SelectProtwoField/pc";
 import SelectTbproField from "./SelectTbproField/pc";
-import SelectDepositField from "./SelectDepositField/pc";
 import SelectHeField from "./SelectHeField/pc";
 import SelectRelatedField from "./SelectRelatedField/pc";
 import SelectHeshouField from "./SelectHeshouField/pc";
@@ -71,7 +70,7 @@ const Suite = createReactClass({
     }
 
     return (
-      <div className="isvzhukuaiwarehousing">
+      <div className="isvzhukuaizkgl">
         <div className="pc-runtime-wrap">
           {this.props.form.getFields().map(field => {
             if (field.props.commonBizType === 'SelectProField' || field.props.commonBizType === 'SelectPro') {
@@ -82,9 +81,6 @@ if (field.props.commonBizType === 'SelectProtwoField' || field.props.commonBizTy
             }
 if (field.props.commonBizType === 'SelectTbproField' || field.props.commonBizType === 'SelectTbpro') {
               return <SelectTbproField {...this.props}  bizAlias={field.props.bizAlias} />;
-            }
-if (field.props.commonBizType === 'SelectDepositField' || field.props.commonBizType === 'SelectDeposit') {
-              return <SelectDepositField {...this.props}  bizAlias={field.props.bizAlias} />;
             }
 if (field.props.commonBizType === 'SelectHeField' || field.props.commonBizType === 'SelectHe') {
               return <SelectHeField {...this.props}  bizAlias={field.props.bizAlias} />;

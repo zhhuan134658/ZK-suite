@@ -190,7 +190,7 @@ const FormField: ISwapFormField = {
               </div>
             </div>
             {createPortal(
-              <Drawer className="isvzhukuaiwarehousing" 
+              <Drawer className="isvzhukuaizkgl" 
                 open={true}
                 style={{
                   minHeight: document.documentElement.clientHeight,

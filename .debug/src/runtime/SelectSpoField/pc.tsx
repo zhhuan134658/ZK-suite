@@ -58,7 +58,7 @@ const FormField: ISwapFormField = {
     const { form } = this.props;
     return {
       detdate: 'a1',
-      detailname: '',
+      Inputvalue: '',
       Inputvalue: '',
       //   Inputvalue: '123',
       current_page: '', //当前页
@@ -122,7 +122,7 @@ const FormField: ISwapFormField = {
       },
       iconClick() {
         const { form } = _this.props;
-        _this.setState({ detailname: '' });
+        _this.setState({ Inputvalue: '' });
         form.setFieldValue('Jiesmoney', '');
         form.setFieldExtendValue('Jiesmoney', '');
         form.setFieldValue('SelectSpo', '');
@@ -171,15 +171,13 @@ const FormField: ISwapFormField = {
       },
       rowClick(record: any) {
         const { form } = _this.props;
-        _this.setState(
-          { Inputvalue: record.name, isModalVisible: false },
-          () => {
-            form.setFieldValue('Jiesmoney', record.detailed_money);
-            form.setFieldExtendValue('Jiesmoney', record.detailed_money);
-            form.setFieldValue('SelectSpo', record.name);
-            form.setFieldExtendValue('SelectSpo', record.name);
-          },
-        );
+
+        form.setFieldValue('Jiesmoney', record.reply_money);
+        form.setFieldExtendValue('Jiesmoney', record.reply_money);
+        form.setFieldValue('SelectSpo', record.name);
+        form.setFieldExtendValue('SelectSpo', record.name);
+
+        _this.setState({ Inputvalue: record.name, isModalVisible: false });
       },
     };
   },
@@ -265,7 +263,7 @@ const FormField: ISwapFormField = {
           dtar = newData[0].name;
         }
         console.log('======' + JSON.stringify(newData));
-        this.setState({ currentSelectData: newData, detailname: dtar });
+        this.setState({ currentSelectData: newData, Inputvalue: dtar });
         //   Jiesmoney;
 
         form.setFieldValue('SelectSpo', dtar);
@@ -302,7 +300,7 @@ const FormField: ISwapFormField = {
           <div>
             <Input
               readOnly
-              value={this.state.detailname}
+              value={this.state.Inputvalue}
               onClick={this.methods().handleAdd}
               placeholder="请选择"
               suffix={
@@ -314,7 +312,7 @@ const FormField: ISwapFormField = {
             />
           </div>
 
-          <Modal className="isvzhukuaiwarehousing" 
+          <Modal className="isvzhukuaizkgl" 
             title="选择合同"
             width={1000}
             visible={this.state.isModalVisible}
@@ -349,9 +347,10 @@ const FormField: ISwapFormField = {
             />
             <Table
               scroll={{ y: '255px' }}
-              rowSelection={{
-                type: 'radio',
-                ...rowSelection,
+              onRow={record => {
+                return {
+                  onClick: this.methods().rowClick.bind(this, record),
+                };
               }}
               rowKey={record => record.id}
               columns={myColumns}

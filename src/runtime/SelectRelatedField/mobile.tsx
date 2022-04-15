@@ -36,27 +36,24 @@ const FormField: ISwapFormField = {
         });
       },
       onExtraClick() {
+        const { form } = _this.props;
         _this.setState({ inputvalue: '' });
+        form.setFieldValue('SelectRelated', '');
+        form.setFieldExtendValue('SelectRelated', '');
+        form.setFieldValue('Moneytest', '');
+        form.setFieldExtendValue('Moneytest', '');
       },
       handleClick(record: any) {
         const { form } = _this.props;
-        if (record.extend_two) {
-          _this.setState({ Inputvalue: record.extend_two });
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        } else if (record.extend_five) {
-          _this.setState({ Inputvalue: record.extend_five });
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        } else if (record.extend_five) {
-          _this.setState({ Inputvalue: record.extend_five });
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        }
-        _this.setState({ showElem: 'none' }, () => {
-          form.setFieldValue('Conmoney', record.money);
-          form.setFieldExtendValue('Conmoney', record.money);
-        });
+
+        _this.setState({ inputvalue: record.title });
+        form.setFieldValue('SelectRelated', record.title);
+        form.setFieldExtendValue('SelectRelated', record.title);
+
+        form.setFieldValue('Moneytest', record.money);
+        form.setFieldExtendValue('Moneytest', record.money);
+        console.log('record', record);
+        _this.setState({ showElem: 'none' });
       },
       onSubmit(value: any) {
         const data = _this.state.allData;

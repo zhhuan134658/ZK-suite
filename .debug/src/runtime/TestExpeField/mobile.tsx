@@ -146,7 +146,8 @@ const FormField: ISwapFormField = {
     console.log('sss');
     console.log(args);
     const newdate = this.state.allData;
-    newdate.rk_id = ['a'];
+    newdate.rk_id = ['b'];
+
     this.asyncSetFieldProps(newdate, '12');
     this.setState({ showElem: 'inherit', checkindex: index });
   },
@@ -158,13 +159,14 @@ const FormField: ISwapFormField = {
     this.asyncSetFieldProps(newdate);
     this.setState({ showElem2: 'inherit', checkindex: index });
   },
-  habdlClick(item: { value: any }) {
+  habdlClick(item) {
     const { form } = this.props;
     console.log(item);
     const arr = this.state.materialList;
     const arrindex = this.state.checkindex;
-
-    arr[arrindex].ke_name = item.value;
+    const itemValue = item.split('/');
+    console.log('99999999999', itemValue);
+    arr[arrindex].ke_name = itemValue;
 
     this.setState(
       { inputvalue: item.value, showElem: 'none', materialList: arr },
@@ -429,7 +431,7 @@ const FormField: ISwapFormField = {
                 key={index}
                 multipleLine
               >
-                {item.value}
+                {item}
               </List.Item>
             );
           })}
@@ -909,7 +911,7 @@ const FormField: ISwapFormField = {
           {/* 合计 */}
           {/* 物资明细 */}
           {createPortal(
-            <Drawer className="isvzhukuaiwarehousing" 
+            <Drawer className="isvzhukuaizkgl" 
               open={true}
               style={{
                 minHeight: document.documentElement.clientHeight,
@@ -932,7 +934,7 @@ const FormField: ISwapFormField = {
             document.getElementById('MF_APP'),
           )}
           {createPortal(
-            <Drawer className="isvzhukuaiwarehousing" 
+            <Drawer className="isvzhukuaizkgl" 
               open={true}
               style={{
                 minHeight: document.documentElement.clientHeight,

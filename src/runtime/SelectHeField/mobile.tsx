@@ -83,6 +83,14 @@ const FormField: ISwapFormField = {
     const field = form.getFieldInstance('SelectHe');
     const label = form.getFieldProp('SelectHe', 'label');
     const required = form.getFieldProp('SelectHe', 'required');
+    form.onFieldExtendValueChange('SelectHe', (value: string) => {
+      console.log('vakue', value);
+      if (this.state.inputvalue !== value) {
+        this.setState({
+          inputvalue: value,
+        });
+      }
+    });
     const sidebar = (
       <div style={{ width: '100vw' }}>
         <SearchBar
@@ -93,8 +101,48 @@ const FormField: ISwapFormField = {
           onCancel={this.handleCancel}
           showCancelButton
         />
-
         <List>
+          {this.state.listData.length === 0 ? (
+            <div
+              className="fancy-list-empty"
+              style={{
+                maxWidth: '100vw',
+                maxHeight: '100vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '10px,0',
+              }}
+            >
+              <img
+                src={
+                  'https://dingyunlaowu.oss-cn-hangzhou.aliyuncs.com/xiezhu//8SyQKD2DCh1638868050008.png'
+                }
+                style={{
+                  maxWidth: '75%',
+                  maxHeight: '75%',
+                }}
+              />
+            </div>
+          ) : (
+            this.state.listData.map((item, index) => {
+              const text = item.xuan === 1 ? '#000000' : '#000000';
+              const style = {
+                color: text,
+              };
+              return (
+                <List.Item
+                  onClick={this.methods().handleClick.bind(this, item)}
+                  key={index}
+                  multipleLine
+                >
+                  <span style={style}> {item.name}</span>
+                </List.Item>
+              );
+            })
+          )}
+        </List>
+        {/* <List>
           {this.state.listData.map((item, index) => {
             const text = item.xuan === 1 ? '#000000' : '#000000';
             const style = {
@@ -110,7 +158,7 @@ const FormField: ISwapFormField = {
               </List.Item>
             );
           })}
-        </List>
+        </List> */}
       </div>
     );
     //详情

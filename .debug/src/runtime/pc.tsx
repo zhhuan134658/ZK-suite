@@ -43,8 +43,10 @@ const SwapDemoSuite: ISwapDemoSuite = {
     const SelectHeField = form.getFieldInstance('SelectHe');
 
     const SelectLease = form.getFieldInstance('SelectLease');
+    const entryAppReasonField = form.getFieldInstance('entryAppReason');
+
     console.log('test12345', SelectLease, SelectHeField);
-    // SelectLease.hide();
+    SelectLease.hide();
     form.onFieldExtendValueChange('RadioField', extendValue => {
       form.setFieldValue('Selectbaopro', '');
       form.setFieldValue('SelectHe', '');

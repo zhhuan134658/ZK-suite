@@ -813,7 +813,7 @@ const FormField: ISwapFormField = {
 
         {/* 物资明细 */}
         {createPortal(
-          <Drawer className="isvzhukuaiwarehousing" 
+          <Drawer className="isvzhukuaizkgl" 
             open={true}
             style={{
               minHeight: document.documentElement.clientHeight,
@@ -836,7 +836,7 @@ const FormField: ISwapFormField = {
           document.getElementById('MF_APP'),
         )}
         {createPortal(
-          <Drawer className="isvzhukuaiwarehousing" 
+          <Drawer className="isvzhukuaizkgl" 
             open={true}
             style={{
               minHeight: document.documentElement.clientHeight,

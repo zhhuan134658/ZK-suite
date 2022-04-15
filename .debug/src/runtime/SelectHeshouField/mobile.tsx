@@ -1,4 +1,4 @@
-import { Drawer, InputItem, SearchBar, Tabs } from 'antd-mobile';
+import { Drawer, InputItem, List, SearchBar, Tabs } from 'antd-mobile';
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { FancyList } from '../../components/fancyLists';
@@ -92,7 +92,7 @@ const FormField: ISwapFormField = {
     const label = form.getFieldProp('SelectHeshou', 'label');
     const required = form.getFieldProp('SelectHeshou', 'required');
     const tabs = [
-      { title: '收入合同', key: '0' },
+      { title: '收入合同1', key: '0' },
       { title: '收入进度款结算', key: '1' },
       { title: '收入完工结算', key: '2' },
       { title: '收入质保金结算', key: '3' },
@@ -176,7 +176,8 @@ const FormField: ISwapFormField = {
           }}
           renderTabBar={props => <Tabs.DefaultTabBar {...props} page={3} />}
         >
-          <div>
+          {/* <div>
+         
             <FancyList
               data={parseListData(this.state.listData, parser)}
               itemClick={this.methods().handleClick}
@@ -199,8 +200,49 @@ const FormField: ISwapFormField = {
               data={parseListData(this.state.listData, secondaryParser)}
               itemClick={this.methods().handleClick}
             />
-          </div>
+          </div> */}
         </Tabs>
+        <List>
+          {this.state.listData.length === 0 ? (
+            <div
+              className="fancy-list-empty"
+              style={{
+                maxWidth: '100vw',
+                maxHeight: '100vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '10px,0',
+              }}
+            >
+              <img
+                src={
+                  'https://dingyunlaowu.oss-cn-hangzhou.aliyuncs.com/xiezhu//8SyQKD2DCh1638868050008.png'
+                }
+                style={{
+                  maxWidth: '75%',
+                  maxHeight: '75%',
+                }}
+              />
+            </div>
+          ) : (
+            this.state.listData.map((item, index) => {
+              const text = item.xuan === 1 ? '#000000' : '#000000';
+              const style = {
+                color: text,
+              };
+              return (
+                <List.Item
+                  onClick={this.methods().handleClick.bind(this, item)}
+                  key={index}
+                  multipleLine
+                >
+                  <span style={style}> {item.name}</span>
+                </List.Item>
+              );
+            })
+          )}
+        </List>
       </div>
     );
     //详情
@@ -250,7 +292,7 @@ const FormField: ISwapFormField = {
               </div>
             </div>
             {createPortal(
-              <Drawer className="isvzhukuaiwarehousing" 
+              <Drawer className="isvzhukuaizkgl" 
                 open={true}
                 style={{
                   minHeight: document.documentElement.clientHeight,

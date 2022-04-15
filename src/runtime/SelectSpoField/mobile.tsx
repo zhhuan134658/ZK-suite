@@ -42,8 +42,8 @@ const FormField: ISwapFormField = {
       handleClick(item: any) {
         const { form } = _this.props;
         _this.setState({ inputvalue: item.name, showElem: 'none' }, () => {
-          form.setFieldValue('Jiesmoney', item.detailed_money);
-          form.setFieldExtendValue('Jiesmoney', item.detailed_money);
+          form.setFieldValue('Jiesmoney', item.reply_money);
+          form.setFieldExtendValue('Jiesmoney', item.reply_money);
           form.setFieldValue('SelectSpo', item.name);
           form.setFieldExtendValue('SelectSpo', item.name);
         });

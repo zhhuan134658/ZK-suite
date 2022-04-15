@@ -49,10 +49,10 @@ const myColumns = [
   },
   {
     title: '分包单位',
-    dataIndex: 'extend_first',
+    dataIndex: 'sub_unit',
     render: (_, record: any) => (
-      <Tooltip placement="topLeft" title={record.extend_first}>
-        <span>{record.extend_first}</span>
+      <Tooltip placement="topLeft" title={record.sub_unit}>
+        <span>{record.sub_unit}</span>
       </Tooltip>
     ),
   },
@@ -363,10 +363,10 @@ const FormField: ISwapFormField = {
         const { form } = this.props;
         form.setFieldValue('SubconField', newData[0].contract_name);
         form.setFieldExtendValue('SubconField', newData[0].contract_name);
-        if (newData[0].sub_unit) {
-          form.setFieldValue('Selectjia', newData[0].sub_unit);
-          form.setFieldExtendValue('Selectjia', newData[0].sub_unit);
-        }
+
+        form.setFieldValue('Selectjia', newData[0].sub_unit);
+        form.setFieldExtendValue('Selectjia', newData[0].sub_unit);
+
         this.setState({
           currentSelectData: newData,
           currentSelectDataid: newDataid,

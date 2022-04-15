@@ -138,7 +138,7 @@ const FormField: IFormField = {
         title: true,
       },
       {
-        key: 'extend_first',
+        key: 'sub_unit',
         label: '分包单位',
         index: 2,
       },
@@ -257,7 +257,7 @@ const FormField: IFormField = {
             {/* 使用这种方式，将组件挂在到根元素下，防止样式污染 */}
 
             {createPortal(
-              <Drawer className="isvzhukuaiwarehousing" 
+              <Drawer className="isvzhukuaizkgl" 
                 open={true}
                 style={{
                   minHeight: document.documentElement.clientHeight,

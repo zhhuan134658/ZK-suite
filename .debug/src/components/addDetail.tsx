@@ -118,7 +118,7 @@ const HandledDetailDialogMobile: React.FC<{
         </Button>,
         document.getElementById('MF_APP'),
       )}
-      <Modal className="isvzhukuaiwarehousing" 
+      <Modal className="isvzhukuaizkgl" 
         visible={visible}
         bodyStyle={{
           borderTopLeftRadius: '8px',
@@ -137,7 +137,7 @@ const HandledDetailDialogMobile: React.FC<{
               <Button
                 type="primary"
                 onClick={() => {
-                  wrappedFinish(formData);
+                  setVisible(true);
                 }}
               >
                 提交
@@ -403,7 +403,7 @@ const SupplierMobileDialog: React.FC<{
       >
         新增供应商
       </Button>
-      <Modal className="isvzhukuaiwarehousing" 
+      <Modal className="isvzhukuaizkgl" 
         visible={visible}
         bodyStyle={{
           borderTopLeftRadius: '8px',
@@ -419,14 +419,26 @@ const SupplierMobileDialog: React.FC<{
             // onFinish={wrappedFinish}
             // onFinishFailed={wrappedFinishFailed}
             renderFooter={
-              <Button
-                type="primary"
-                onClick={() => {
-                  wrappedFinish(formData);
-                }}
-              >
-                提交
-              </Button>
+              <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                <Button
+                  style={{ width: '40%' }}
+                  type="primary"
+                  onClick={() => {
+                    wrappedFinish(formData);
+                  }}
+                >
+                  提交
+                </Button>
+                <Button
+                  style={{ width: '40%' }}
+                  type="primary"
+                  onClick={() => {
+                    setVisible(false);
+                  }}
+                >
+                  取消
+                </Button>
+              </div>
             }
           >
             <InputItem
@@ -549,7 +561,7 @@ const StorageMobileDialog: React.FC<{
       >
         新增仓库
       </Button>
-      <Modal className="isvzhukuaiwarehousing" 
+      <Modal className="isvzhukuaizkgl" 
         visible={visible}
         bodyStyle={{
           borderTopLeftRadius: '8px',

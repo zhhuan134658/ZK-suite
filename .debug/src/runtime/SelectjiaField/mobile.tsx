@@ -118,10 +118,13 @@ const FormField: ISwapFormField = {
       newdate.supplier_add = '';
     };
     form.onFieldExtendValueChange('Selectjia', (value: any) => {
-      this.setState({
-        Inputvalue: value,
-      });
+      if (this.state.inputvalue !== value) {
+        this.setState({
+          inputvalue: value,
+        });
+      }
     });
+
     const onFinishFailed = (errorInfo: any) => {
       console.log('Failed:', errorInfo);
     };
@@ -195,7 +198,7 @@ const FormField: ISwapFormField = {
               </div>
             </div>
             {createPortal(
-              <Drawer className="isvzhukuaiwarehousing" 
+              <Drawer className="isvzhukuaizkgl" 
                 open={true}
                 style={{
                   minHeight: document.documentElement.clientHeight,

@@ -90,7 +90,13 @@ const FormField: ISwapFormField = {
     const onFinishFailed = (errorInfo: any) => {
       console.log('Failed:', errorInfo);
     };
-
+    form.onFieldExtendValueChange('CorpSupplier', (value: any) => {
+      if (this.state.inputvalue !== value) {
+        this.setState({
+          inputvalue: value,
+        });
+      }
+    });
     const sidebar = (
       <div style={{ width: '100vw' }}>
         <SearchBar
@@ -168,7 +174,7 @@ const FormField: ISwapFormField = {
               </div>
             </div>
             {createPortal(
-              <Drawer className="isvzhukuaiwarehousing" 
+              <Drawer className="isvzhukuaizkgl" 
                 open={true}
                 style={{
                   minHeight: document.documentElement.clientHeight,

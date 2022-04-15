@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("antd"), require("AntdMobile"), require("React"), require("ReactDOM"));
+		module.exports = factory(require("React"), require("antd"), require("AntdMobile"), require("ReactDOM"));
 	else if(typeof define === 'function' && define.amd)
-		define(["antd", "AntdMobile", "React", "ReactDOM"], factory);
+		define(["React", "antd", "AntdMobile", "ReactDOM"], factory);
 	else if(typeof exports === 'object')
-		exports["@ali/suite-demo"] = factory(require("antd"), require("AntdMobile"), require("React"), require("ReactDOM"));
+		exports["@ali/suite-demo"] = factory(require("React"), require("antd"), require("AntdMobile"), require("ReactDOM"));
 	else
-		root["@ali/suite-demo"] = factory(root["antd"], root["AntdMobile"], root["React"], root["ReactDOM"]);
-})(window, function(__WEBPACK_EXTERNAL_MODULE_antd__, __WEBPACK_EXTERNAL_MODULE_antd_mobile__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom__) {
+		root["@ali/suite-demo"] = factory(root["React"], root["antd"], root["AntdMobile"], root["ReactDOM"]);
+})(window, function(__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_antd__, __WEBPACK_EXTERNAL_MODULE_antd_mobile__, __WEBPACK_EXTERNAL_MODULE_react_dom__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "4bed096bb44261f8db23";
+/******/ 	var hotCurrentHash = "030ab7110f0726a202d3";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1190,44 +1190,6 @@ __webpack_require__.r(__webpack_exports__);
 var Field = create_react_class__WEBPACK_IMPORTED_MODULE_1___default()({
   displayName: "Field",
   mixins: [_src_runtime_SelectConField_mobile__WEBPACK_IMPORTED_MODULE_0__["default"]],
-  componentWillMount: function componentWillMount() {
-    this.fieldWillMount && this.fieldWillMount();
-  },
-  componentDidMount: function componentDidMount() {
-    this.fieldDidMount && this.fieldDidMount();
-  },
-  componentDidUpdate: function componentDidUpdate() {
-    this.fieldDidUpdate && this.fieldDidUpdate();
-  },
-  render: function render() {
-    if (this.fieldRender) {
-      return this.fieldRender();
-    }
-
-    return null;
-  }
-});
-/* harmony default export */ __webpack_exports__["default"] = (Field);
-
-/***/ }),
-
-/***/ "./.debug/runtime/SelectDepositField/mobile.tsx":
-/*!******************************************************!*\
-  !*** ./.debug/runtime/SelectDepositField/mobile.tsx ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _src_runtime_SelectDepositField_mobile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../src/runtime/SelectDepositField/mobile */ "./.debug/src/runtime/SelectDepositField/mobile.tsx");
-/* harmony import */ var create_react_class__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! create-react-class */ "./node_modules/create-react-class/index.js");
-/* harmony import */ var create_react_class__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(create_react_class__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var Field = create_react_class__WEBPACK_IMPORTED_MODULE_1___default()({
-  displayName: "Field",
-  mixins: [_src_runtime_SelectDepositField_mobile__WEBPACK_IMPORTED_MODULE_0__["default"]],
   componentWillMount: function componentWillMount() {
     this.fieldWillMount && this.fieldWillMount();
   },
@@ -2864,57 +2826,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SelectProField_mobile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SelectProField/mobile */ "./.debug/runtime/SelectProField/mobile.tsx");
 /* harmony import */ var _SelectProtwoField_mobile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SelectProtwoField/mobile */ "./.debug/runtime/SelectProtwoField/mobile.tsx");
 /* harmony import */ var _SelectTbproField_mobile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SelectTbproField/mobile */ "./.debug/runtime/SelectTbproField/mobile.tsx");
-/* harmony import */ var _SelectDepositField_mobile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SelectDepositField/mobile */ "./.debug/runtime/SelectDepositField/mobile.tsx");
-/* harmony import */ var _SelectHeField_mobile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SelectHeField/mobile */ "./.debug/runtime/SelectHeField/mobile.tsx");
-/* harmony import */ var _SelectRelatedField_mobile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SelectRelatedField/mobile */ "./.debug/runtime/SelectRelatedField/mobile.tsx");
-/* harmony import */ var _SelectHeshouField_mobile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./SelectHeshouField/mobile */ "./.debug/runtime/SelectHeshouField/mobile.tsx");
-/* harmony import */ var _SelectLeaseField_mobile__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SelectLeaseField/mobile */ "./.debug/runtime/SelectLeaseField/mobile.tsx");
-/* harmony import */ var _SelectZuField_mobile__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./SelectZuField/mobile */ "./.debug/runtime/SelectZuField/mobile.tsx");
-/* harmony import */ var _SelectFenField_mobile__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./SelectFenField/mobile */ "./.debug/runtime/SelectFenField/mobile.tsx");
-/* harmony import */ var _SelectConField_mobile__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SelectConField/mobile */ "./.debug/runtime/SelectConField/mobile.tsx");
-/* harmony import */ var _SelectjiaField_mobile__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./SelectjiaField/mobile */ "./.debug/runtime/SelectjiaField/mobile.tsx");
-/* harmony import */ var _SelectLaoField_mobile__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./SelectLaoField/mobile */ "./.debug/runtime/SelectLaoField/mobile.tsx");
-/* harmony import */ var _SelectSpoField_mobile__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./SelectSpoField/mobile */ "./.debug/runtime/SelectSpoField/mobile.tsx");
-/* harmony import */ var _SelecTickeField_mobile__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./SelecTickeField/mobile */ "./.debug/runtime/SelecTickeField/mobile.tsx");
-/* harmony import */ var _SelecTickefaField_mobile__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./SelecTickefaField/mobile */ "./.debug/runtime/SelecTickefaField/mobile.tsx");
-/* harmony import */ var _TestMaterField_mobile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./TestMaterField/mobile */ "./.debug/runtime/TestMaterField/mobile.tsx");
-/* harmony import */ var _TestCollectionField_mobile__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./TestCollectionField/mobile */ "./.debug/runtime/TestCollectionField/mobile.tsx");
-/* harmony import */ var _TestLabourField_mobile__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./TestLabourField/mobile */ "./.debug/runtime/TestLabourField/mobile.tsx");
-/* harmony import */ var _TestSubconField_mobile__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./TestSubconField/mobile */ "./.debug/runtime/TestSubconField/mobile.tsx");
-/* harmony import */ var _TestRegistField_mobile__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./TestRegistField/mobile */ "./.debug/runtime/TestRegistField/mobile.tsx");
-/* harmony import */ var _SelectAccField_mobile__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./SelectAccField/mobile */ "./.debug/runtime/SelectAccField/mobile.tsx");
-/* harmony import */ var _CorpSupplierField_mobile__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./CorpSupplierField/mobile */ "./.debug/runtime/CorpSupplierField/mobile.tsx");
-/* harmony import */ var _CorpSupplieryiField_mobile__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./CorpSupplieryiField/mobile */ "./.debug/runtime/CorpSupplieryiField/mobile.tsx");
-/* harmony import */ var _CorpHouseField_mobile__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./CorpHouseField/mobile */ "./.debug/runtime/CorpHouseField/mobile.tsx");
-/* harmony import */ var _PositionDesField_mobile__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./PositionDesField/mobile */ "./.debug/runtime/PositionDesField/mobile.tsx");
-/* harmony import */ var _TestBiddingField_mobile__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./TestBiddingField/mobile */ "./.debug/runtime/TestBiddingField/mobile.tsx");
-/* harmony import */ var _TestBidzhiField_mobile__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./TestBidzhiField/mobile */ "./.debug/runtime/TestBidzhiField/mobile.tsx");
-/* harmony import */ var _TestBidshouField_mobile__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./TestBidshouField/mobile */ "./.debug/runtime/TestBidshouField/mobile.tsx");
-/* harmony import */ var _TestPlanField_mobile__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./TestPlanField/mobile */ "./.debug/runtime/TestPlanField/mobile.tsx");
-/* harmony import */ var _TestOrderField_mobile__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./TestOrderField/mobile */ "./.debug/runtime/TestOrderField/mobile.tsx");
-/* harmony import */ var _TestOrdernewField_mobile__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./TestOrdernewField/mobile */ "./.debug/runtime/TestOrdernewField/mobile.tsx");
-/* harmony import */ var _TestSheField_mobile__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./TestSheField/mobile */ "./.debug/runtime/TestSheField/mobile.tsx");
-/* harmony import */ var _TestMaterialField_mobile__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./TestMaterialField/mobile */ "./.debug/runtime/TestMaterialField/mobile.tsx");
-/* harmony import */ var _TestApplicationField_mobile__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./TestApplicationField/mobile */ "./.debug/runtime/TestApplicationField/mobile.tsx");
-/* harmony import */ var _TestSetField_mobile__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./TestSetField/mobile */ "./.debug/runtime/TestSetField/mobile.tsx");
-/* harmony import */ var _TestPurField_mobile__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./TestPurField/mobile */ "./.debug/runtime/TestPurField/mobile.tsx");
-/* harmony import */ var _TestReturnField_mobile__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./TestReturnField/mobile */ "./.debug/runtime/TestReturnField/mobile.tsx");
-/* harmony import */ var _TestExpeField_mobile__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./TestExpeField/mobile */ "./.debug/runtime/TestExpeField/mobile.tsx");
-/* harmony import */ var _TestCinField_mobile__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./TestCinField/mobile */ "./.debug/runtime/TestCinField/mobile.tsx");
-/* harmony import */ var _TestOutField_mobile__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./TestOutField/mobile */ "./.debug/runtime/TestOutField/mobile.tsx");
-/* harmony import */ var _TestCunField_mobile__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./TestCunField/mobile */ "./.debug/runtime/TestCunField/mobile.tsx");
-/* harmony import */ var _TestLeaseField_mobile__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./TestLeaseField/mobile */ "./.debug/runtime/TestLeaseField/mobile.tsx");
-/* harmony import */ var _TestLeconField_mobile__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./TestLeconField/mobile */ "./.debug/runtime/TestLeconField/mobile.tsx");
-/* harmony import */ var _TestMachineryField_mobile__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./TestMachineryField/mobile */ "./.debug/runtime/TestMachineryField/mobile.tsx");
-/* harmony import */ var _TestDemandField_mobile__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./TestDemandField/mobile */ "./.debug/runtime/TestDemandField/mobile.tsx");
-/* harmony import */ var _TestInspecField_mobile__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./TestInspecField/mobile */ "./.debug/runtime/TestInspecField/mobile.tsx");
-/* harmony import */ var _TestMainField_mobile__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./TestMainField/mobile */ "./.debug/runtime/TestMainField/mobile.tsx");
-/* harmony import */ var _TestOliField_mobile__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./TestOliField/mobile */ "./.debug/runtime/TestOliField/mobile.tsx");
-/* harmony import */ var _TestScienceField_mobile__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./TestScienceField/mobile */ "./.debug/runtime/TestScienceField/mobile.tsx");
-/* harmony import */ var _TestOpeningField_mobile__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./TestOpeningField/mobile */ "./.debug/runtime/TestOpeningField/mobile.tsx");
-/* harmony import */ var _AntdUploadFiled_mobile__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./AntdUploadFiled/mobile */ "./.debug/runtime/AntdUploadFiled/mobile.tsx");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! react-dom */ "react-dom");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _SelectHeField_mobile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SelectHeField/mobile */ "./.debug/runtime/SelectHeField/mobile.tsx");
+/* harmony import */ var _SelectRelatedField_mobile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SelectRelatedField/mobile */ "./.debug/runtime/SelectRelatedField/mobile.tsx");
+/* harmony import */ var _SelectHeshouField_mobile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SelectHeshouField/mobile */ "./.debug/runtime/SelectHeshouField/mobile.tsx");
+/* harmony import */ var _SelectLeaseField_mobile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./SelectLeaseField/mobile */ "./.debug/runtime/SelectLeaseField/mobile.tsx");
+/* harmony import */ var _SelectZuField_mobile__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SelectZuField/mobile */ "./.debug/runtime/SelectZuField/mobile.tsx");
+/* harmony import */ var _SelectFenField_mobile__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./SelectFenField/mobile */ "./.debug/runtime/SelectFenField/mobile.tsx");
+/* harmony import */ var _SelectConField_mobile__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./SelectConField/mobile */ "./.debug/runtime/SelectConField/mobile.tsx");
+/* harmony import */ var _SelectjiaField_mobile__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SelectjiaField/mobile */ "./.debug/runtime/SelectjiaField/mobile.tsx");
+/* harmony import */ var _SelectLaoField_mobile__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./SelectLaoField/mobile */ "./.debug/runtime/SelectLaoField/mobile.tsx");
+/* harmony import */ var _SelectSpoField_mobile__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./SelectSpoField/mobile */ "./.debug/runtime/SelectSpoField/mobile.tsx");
+/* harmony import */ var _SelecTickeField_mobile__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./SelecTickeField/mobile */ "./.debug/runtime/SelecTickeField/mobile.tsx");
+/* harmony import */ var _SelecTickefaField_mobile__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./SelecTickefaField/mobile */ "./.debug/runtime/SelecTickefaField/mobile.tsx");
+/* harmony import */ var _TestMaterField_mobile__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./TestMaterField/mobile */ "./.debug/runtime/TestMaterField/mobile.tsx");
+/* harmony import */ var _TestCollectionField_mobile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./TestCollectionField/mobile */ "./.debug/runtime/TestCollectionField/mobile.tsx");
+/* harmony import */ var _TestLabourField_mobile__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./TestLabourField/mobile */ "./.debug/runtime/TestLabourField/mobile.tsx");
+/* harmony import */ var _TestSubconField_mobile__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./TestSubconField/mobile */ "./.debug/runtime/TestSubconField/mobile.tsx");
+/* harmony import */ var _TestRegistField_mobile__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./TestRegistField/mobile */ "./.debug/runtime/TestRegistField/mobile.tsx");
+/* harmony import */ var _SelectAccField_mobile__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./SelectAccField/mobile */ "./.debug/runtime/SelectAccField/mobile.tsx");
+/* harmony import */ var _CorpSupplierField_mobile__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./CorpSupplierField/mobile */ "./.debug/runtime/CorpSupplierField/mobile.tsx");
+/* harmony import */ var _CorpSupplieryiField_mobile__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./CorpSupplieryiField/mobile */ "./.debug/runtime/CorpSupplieryiField/mobile.tsx");
+/* harmony import */ var _CorpHouseField_mobile__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./CorpHouseField/mobile */ "./.debug/runtime/CorpHouseField/mobile.tsx");
+/* harmony import */ var _PositionDesField_mobile__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./PositionDesField/mobile */ "./.debug/runtime/PositionDesField/mobile.tsx");
+/* harmony import */ var _TestBiddingField_mobile__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./TestBiddingField/mobile */ "./.debug/runtime/TestBiddingField/mobile.tsx");
+/* harmony import */ var _TestBidzhiField_mobile__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./TestBidzhiField/mobile */ "./.debug/runtime/TestBidzhiField/mobile.tsx");
+/* harmony import */ var _TestBidshouField_mobile__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./TestBidshouField/mobile */ "./.debug/runtime/TestBidshouField/mobile.tsx");
+/* harmony import */ var _TestPlanField_mobile__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./TestPlanField/mobile */ "./.debug/runtime/TestPlanField/mobile.tsx");
+/* harmony import */ var _TestOrderField_mobile__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./TestOrderField/mobile */ "./.debug/runtime/TestOrderField/mobile.tsx");
+/* harmony import */ var _TestOrdernewField_mobile__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./TestOrdernewField/mobile */ "./.debug/runtime/TestOrdernewField/mobile.tsx");
+/* harmony import */ var _TestSheField_mobile__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./TestSheField/mobile */ "./.debug/runtime/TestSheField/mobile.tsx");
+/* harmony import */ var _TestMaterialField_mobile__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./TestMaterialField/mobile */ "./.debug/runtime/TestMaterialField/mobile.tsx");
+/* harmony import */ var _TestApplicationField_mobile__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./TestApplicationField/mobile */ "./.debug/runtime/TestApplicationField/mobile.tsx");
+/* harmony import */ var _TestSetField_mobile__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./TestSetField/mobile */ "./.debug/runtime/TestSetField/mobile.tsx");
+/* harmony import */ var _TestPurField_mobile__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./TestPurField/mobile */ "./.debug/runtime/TestPurField/mobile.tsx");
+/* harmony import */ var _TestReturnField_mobile__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./TestReturnField/mobile */ "./.debug/runtime/TestReturnField/mobile.tsx");
+/* harmony import */ var _TestExpeField_mobile__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./TestExpeField/mobile */ "./.debug/runtime/TestExpeField/mobile.tsx");
+/* harmony import */ var _TestCinField_mobile__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./TestCinField/mobile */ "./.debug/runtime/TestCinField/mobile.tsx");
+/* harmony import */ var _TestOutField_mobile__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./TestOutField/mobile */ "./.debug/runtime/TestOutField/mobile.tsx");
+/* harmony import */ var _TestCunField_mobile__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./TestCunField/mobile */ "./.debug/runtime/TestCunField/mobile.tsx");
+/* harmony import */ var _TestLeaseField_mobile__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./TestLeaseField/mobile */ "./.debug/runtime/TestLeaseField/mobile.tsx");
+/* harmony import */ var _TestLeconField_mobile__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./TestLeconField/mobile */ "./.debug/runtime/TestLeconField/mobile.tsx");
+/* harmony import */ var _TestMachineryField_mobile__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./TestMachineryField/mobile */ "./.debug/runtime/TestMachineryField/mobile.tsx");
+/* harmony import */ var _TestDemandField_mobile__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./TestDemandField/mobile */ "./.debug/runtime/TestDemandField/mobile.tsx");
+/* harmony import */ var _TestInspecField_mobile__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./TestInspecField/mobile */ "./.debug/runtime/TestInspecField/mobile.tsx");
+/* harmony import */ var _TestMainField_mobile__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./TestMainField/mobile */ "./.debug/runtime/TestMainField/mobile.tsx");
+/* harmony import */ var _TestOliField_mobile__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./TestOliField/mobile */ "./.debug/runtime/TestOliField/mobile.tsx");
+/* harmony import */ var _TestScienceField_mobile__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./TestScienceField/mobile */ "./.debug/runtime/TestScienceField/mobile.tsx");
+/* harmony import */ var _TestOpeningField_mobile__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./TestOpeningField/mobile */ "./.debug/runtime/TestOpeningField/mobile.tsx");
+/* harmony import */ var _AntdUploadFiled_mobile__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./AntdUploadFiled/mobile */ "./.debug/runtime/AntdUploadFiled/mobile.tsx");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_54__);
 var __assign = undefined && undefined.__assign || function () {
   __assign = Object.assign || function (t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -2930,7 +2891,6 @@ var __assign = undefined && undefined.__assign || function () {
 
   return __assign.apply(this, arguments);
 };
-
 
 
 
@@ -3006,7 +2966,7 @@ var Suite = create_react_class__WEBPACK_IMPORTED_MODULE_2___default()({
     }
 
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "isvzhukuaiwarehousing"
+      className: "isvzhukuaizkgl"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "mobile-runtime-wrap"
     }, this.props.form.getFields().map(function (field) {
@@ -3028,296 +2988,290 @@ var Suite = create_react_class__WEBPACK_IMPORTED_MODULE_2___default()({
         }));
       }
 
-      if (field.props.commonBizType === 'SelectDepositField' || field.props.commonBizType === 'SelectDeposit') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectDepositField_mobile__WEBPACK_IMPORTED_MODULE_6__["default"], __assign({}, _this.props, {
-          bizAlias: field.props.bizAlias
-        }));
-      }
-
       if (field.props.commonBizType === 'SelectHeField' || field.props.commonBizType === 'SelectHe') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectHeField_mobile__WEBPACK_IMPORTED_MODULE_7__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectHeField_mobile__WEBPACK_IMPORTED_MODULE_6__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectRelatedField' || field.props.commonBizType === 'SelectRelated') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectRelatedField_mobile__WEBPACK_IMPORTED_MODULE_8__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectRelatedField_mobile__WEBPACK_IMPORTED_MODULE_7__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectHeshouField' || field.props.commonBizType === 'SelectHeshou') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectHeshouField_mobile__WEBPACK_IMPORTED_MODULE_9__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectHeshouField_mobile__WEBPACK_IMPORTED_MODULE_8__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectLeaseField' || field.props.commonBizType === 'SelectLease') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectLeaseField_mobile__WEBPACK_IMPORTED_MODULE_10__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectLeaseField_mobile__WEBPACK_IMPORTED_MODULE_9__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectZuField' || field.props.commonBizType === 'SelectZu') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectZuField_mobile__WEBPACK_IMPORTED_MODULE_11__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectZuField_mobile__WEBPACK_IMPORTED_MODULE_10__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectFenField' || field.props.commonBizType === 'SelectFen') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectFenField_mobile__WEBPACK_IMPORTED_MODULE_12__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectFenField_mobile__WEBPACK_IMPORTED_MODULE_11__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectConField' || field.props.commonBizType === 'SelectCon') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectConField_mobile__WEBPACK_IMPORTED_MODULE_13__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectConField_mobile__WEBPACK_IMPORTED_MODULE_12__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectjiaField' || field.props.commonBizType === 'Selectjia') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectjiaField_mobile__WEBPACK_IMPORTED_MODULE_14__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectjiaField_mobile__WEBPACK_IMPORTED_MODULE_13__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectLaoField' || field.props.commonBizType === 'SelectLao') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectLaoField_mobile__WEBPACK_IMPORTED_MODULE_15__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectLaoField_mobile__WEBPACK_IMPORTED_MODULE_14__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectSpoField' || field.props.commonBizType === 'SelectSpo') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectSpoField_mobile__WEBPACK_IMPORTED_MODULE_16__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectSpoField_mobile__WEBPACK_IMPORTED_MODULE_15__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelecTickeField' || field.props.commonBizType === 'SelecTicke') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelecTickeField_mobile__WEBPACK_IMPORTED_MODULE_17__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelecTickeField_mobile__WEBPACK_IMPORTED_MODULE_16__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelecTickefaField' || field.props.commonBizType === 'SelecTickefa') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelecTickefaField_mobile__WEBPACK_IMPORTED_MODULE_18__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelecTickefaField_mobile__WEBPACK_IMPORTED_MODULE_17__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestMaterField' || field.props.commonBizType === 'TestMater') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMaterField_mobile__WEBPACK_IMPORTED_MODULE_19__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMaterField_mobile__WEBPACK_IMPORTED_MODULE_18__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestCollectionField' || field.props.commonBizType === 'TestCollection') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestCollectionField_mobile__WEBPACK_IMPORTED_MODULE_20__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestCollectionField_mobile__WEBPACK_IMPORTED_MODULE_19__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestLabourField' || field.props.commonBizType === 'TestLabour') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestLabourField_mobile__WEBPACK_IMPORTED_MODULE_21__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestLabourField_mobile__WEBPACK_IMPORTED_MODULE_20__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestSubconField' || field.props.commonBizType === 'TestSubcon') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestSubconField_mobile__WEBPACK_IMPORTED_MODULE_22__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestSubconField_mobile__WEBPACK_IMPORTED_MODULE_21__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestRegistField' || field.props.commonBizType === 'TestRegist') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestRegistField_mobile__WEBPACK_IMPORTED_MODULE_23__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestRegistField_mobile__WEBPACK_IMPORTED_MODULE_22__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'SelectAccField' || field.props.commonBizType === 'SelectAcc') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectAccField_mobile__WEBPACK_IMPORTED_MODULE_24__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SelectAccField_mobile__WEBPACK_IMPORTED_MODULE_23__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'CorpSupplierField' || field.props.commonBizType === 'CorpSupplier') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CorpSupplierField_mobile__WEBPACK_IMPORTED_MODULE_25__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CorpSupplierField_mobile__WEBPACK_IMPORTED_MODULE_24__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'CorpSupplieryiField' || field.props.commonBizType === 'CorpSupplieryi') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CorpSupplieryiField_mobile__WEBPACK_IMPORTED_MODULE_26__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CorpSupplieryiField_mobile__WEBPACK_IMPORTED_MODULE_25__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'CorpHouseField' || field.props.commonBizType === 'CorpHouse') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CorpHouseField_mobile__WEBPACK_IMPORTED_MODULE_27__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CorpHouseField_mobile__WEBPACK_IMPORTED_MODULE_26__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'PositionDesField' || field.props.commonBizType === 'PositionDes') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PositionDesField_mobile__WEBPACK_IMPORTED_MODULE_28__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PositionDesField_mobile__WEBPACK_IMPORTED_MODULE_27__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestBiddingField' || field.props.commonBizType === 'TestBidding') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestBiddingField_mobile__WEBPACK_IMPORTED_MODULE_29__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestBiddingField_mobile__WEBPACK_IMPORTED_MODULE_28__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestBidzhiField' || field.props.commonBizType === 'TestBidzhi') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestBidzhiField_mobile__WEBPACK_IMPORTED_MODULE_30__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestBidzhiField_mobile__WEBPACK_IMPORTED_MODULE_29__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestBidshouField' || field.props.commonBizType === 'TestBidshou') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestBidshouField_mobile__WEBPACK_IMPORTED_MODULE_31__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestBidshouField_mobile__WEBPACK_IMPORTED_MODULE_30__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestPlanField' || field.props.commonBizType === 'TestPlan') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestPlanField_mobile__WEBPACK_IMPORTED_MODULE_32__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestPlanField_mobile__WEBPACK_IMPORTED_MODULE_31__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestOrderField' || field.props.commonBizType === 'TestOrder') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOrderField_mobile__WEBPACK_IMPORTED_MODULE_33__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOrderField_mobile__WEBPACK_IMPORTED_MODULE_32__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestOrdernewField' || field.props.commonBizType === 'TestOrdernew') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOrdernewField_mobile__WEBPACK_IMPORTED_MODULE_34__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOrdernewField_mobile__WEBPACK_IMPORTED_MODULE_33__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestSheField' || field.props.commonBizType === 'TestShe') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestSheField_mobile__WEBPACK_IMPORTED_MODULE_35__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestSheField_mobile__WEBPACK_IMPORTED_MODULE_34__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestMaterialField' || field.props.commonBizType === 'TestMaterial') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMaterialField_mobile__WEBPACK_IMPORTED_MODULE_36__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMaterialField_mobile__WEBPACK_IMPORTED_MODULE_35__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestApplicationField' || field.props.commonBizType === 'TestApplication') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestApplicationField_mobile__WEBPACK_IMPORTED_MODULE_37__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestApplicationField_mobile__WEBPACK_IMPORTED_MODULE_36__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestSetField' || field.props.commonBizType === 'TestSet') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestSetField_mobile__WEBPACK_IMPORTED_MODULE_38__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestSetField_mobile__WEBPACK_IMPORTED_MODULE_37__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestPurField' || field.props.commonBizType === 'TestPur') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestPurField_mobile__WEBPACK_IMPORTED_MODULE_39__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestPurField_mobile__WEBPACK_IMPORTED_MODULE_38__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestReturnField' || field.props.commonBizType === 'TestReturn') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestReturnField_mobile__WEBPACK_IMPORTED_MODULE_40__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestReturnField_mobile__WEBPACK_IMPORTED_MODULE_39__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestExpeField' || field.props.commonBizType === 'TestExpe') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestExpeField_mobile__WEBPACK_IMPORTED_MODULE_41__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestExpeField_mobile__WEBPACK_IMPORTED_MODULE_40__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestCinField' || field.props.commonBizType === 'TestCin') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestCinField_mobile__WEBPACK_IMPORTED_MODULE_42__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestCinField_mobile__WEBPACK_IMPORTED_MODULE_41__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestOutField' || field.props.commonBizType === 'TestOut') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOutField_mobile__WEBPACK_IMPORTED_MODULE_43__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOutField_mobile__WEBPACK_IMPORTED_MODULE_42__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestCunField' || field.props.commonBizType === 'TestCun') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestCunField_mobile__WEBPACK_IMPORTED_MODULE_44__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestCunField_mobile__WEBPACK_IMPORTED_MODULE_43__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestLeaseField' || field.props.commonBizType === 'TestLease') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestLeaseField_mobile__WEBPACK_IMPORTED_MODULE_45__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestLeaseField_mobile__WEBPACK_IMPORTED_MODULE_44__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestLeconField' || field.props.commonBizType === 'TestLecon') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestLeconField_mobile__WEBPACK_IMPORTED_MODULE_46__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestLeconField_mobile__WEBPACK_IMPORTED_MODULE_45__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestMachineryField' || field.props.commonBizType === 'TestMachinery') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMachineryField_mobile__WEBPACK_IMPORTED_MODULE_47__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMachineryField_mobile__WEBPACK_IMPORTED_MODULE_46__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestDemandField' || field.props.commonBizType === 'TestDemand') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestDemandField_mobile__WEBPACK_IMPORTED_MODULE_48__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestDemandField_mobile__WEBPACK_IMPORTED_MODULE_47__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestInspecField' || field.props.commonBizType === 'TestInspec') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestInspecField_mobile__WEBPACK_IMPORTED_MODULE_49__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestInspecField_mobile__WEBPACK_IMPORTED_MODULE_48__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestMainField' || field.props.commonBizType === 'TestMain') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMainField_mobile__WEBPACK_IMPORTED_MODULE_50__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestMainField_mobile__WEBPACK_IMPORTED_MODULE_49__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestOliField' || field.props.commonBizType === 'TestOli') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOliField_mobile__WEBPACK_IMPORTED_MODULE_51__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOliField_mobile__WEBPACK_IMPORTED_MODULE_50__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestScienceField' || field.props.commonBizType === 'TestScience') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestScienceField_mobile__WEBPACK_IMPORTED_MODULE_52__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestScienceField_mobile__WEBPACK_IMPORTED_MODULE_51__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'TestOpeningField' || field.props.commonBizType === 'TestOpening') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOpeningField_mobile__WEBPACK_IMPORTED_MODULE_53__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TestOpeningField_mobile__WEBPACK_IMPORTED_MODULE_52__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
 
       if (field.props.commonBizType === 'AntdUploadFiled' || field.props.commonBizType === 'AntdUpload') {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AntdUploadFiled_mobile__WEBPACK_IMPORTED_MODULE_54__["default"], __assign({}, _this.props, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AntdUploadFiled_mobile__WEBPACK_IMPORTED_MODULE_53__["default"], __assign({}, _this.props, {
           bizAlias: field.props.bizAlias
         }));
       }
@@ -3329,10 +3283,10 @@ var Suite = create_react_class__WEBPACK_IMPORTED_MODULE_2___default()({
 /* harmony default export */ __webpack_exports__["default"] = (Suite);
 
 function mount(ModuleComponent, targetNode, props) {
-  react_dom__WEBPACK_IMPORTED_MODULE_55___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ModuleComponent, Object.assign({}, props)), targetNode);
+  react_dom__WEBPACK_IMPORTED_MODULE_54___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ModuleComponent, Object.assign({}, props)), targetNode);
 }
 function unmount(targetNode) {
-  react_dom__WEBPACK_IMPORTED_MODULE_55___default.a.unmountComponentAtNode(targetNode);
+  react_dom__WEBPACK_IMPORTED_MODULE_54___default.a.unmountComponentAtNode(targetNode);
 }
 
 /***/ }),
@@ -3500,7 +3454,7 @@ var HandledDetailDialogMobile = function HandledDetailDialogMobile(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile_icons__WEBPACK_IMPORTED_MODULE_3__["AddOutline"], {
     fontSize: 32
   })), document.getElementById('MF_APP')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Modal"], {
-    className: "isvzhukuaiwarehousing",
+    className: "isvzhukuaizkgl",
     visible: visible,
     bodyStyle: {
       borderTopLeftRadius: '8px',
@@ -3523,7 +3477,7 @@ var HandledDetailDialogMobile = function HandledDetailDialogMobile(props) {
     renderFooter: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
       type: "primary",
       onClick: function onClick() {
-        wrappedFinish(formData);
+        setVisible(true);
       }
     }, "\u63D0\u4EA4")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["InputItem"], {
@@ -3783,7 +3737,7 @@ var SupplierMobileDialog = function SupplierMobileDialog(props) {
     type: "primary",
     style: mbuttomStyle
   }, "\u65B0\u589E\u4F9B\u5E94\u5546"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Modal"], {
-    className: "isvzhukuaiwarehousing",
+    className: "isvzhukuaizkgl",
     visible: visible,
     bodyStyle: {
       borderTopLeftRadius: '8px',
@@ -3803,12 +3757,28 @@ var SupplierMobileDialog = function SupplierMobileDialog(props) {
   , {
     // onFinish={wrappedFinish}
     // onFinishFailed={wrappedFinishFailed}
-    renderFooter: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    renderFooter: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'space-around'
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      style: {
+        width: '40%'
+      },
       type: "primary",
       onClick: function onClick() {
         wrappedFinish(formData);
       }
-    }, "\u63D0\u4EA4")
+    }, "\u63D0\u4EA4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      style: {
+        width: '40%'
+      },
+      type: "primary",
+      onClick: function onClick() {
+        setVisible(false);
+      }
+    }, "\u53D6\u6D88"))
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["InputItem"], {
     placeholder: "\u8BF7\u586B\u5199\u5355\u4F4D\u540D\u79F0",
     onChange: function onChange(val) {
@@ -3914,7 +3884,7 @@ var StorageMobileDialog = function StorageMobileDialog(props) {
     },
     style: mbuttomStyle
   }, "\u65B0\u589E\u4ED3\u5E93"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Modal"], {
-    className: "isvzhukuaiwarehousing",
+    className: "isvzhukuaizkgl",
     visible: visible,
     bodyStyle: {
       borderTopLeftRadius: '8px',
@@ -4908,7 +4878,7 @@ var purColumns = [{
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824173
+      // 1650006710225
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -5171,7 +5141,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -5350,6 +5320,13 @@ var FormField = {
       console.log('Failed:', errorInfo);
     };
 
+    form.onFieldExtendValueChange('CorpSupplier', function (value) {
+      if (_this_1.state.inputvalue !== value) {
+        _this_1.setState({
+          inputvalue: value
+        });
+      }
+    });
     var sidebar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       style: {
         width: '100vw'
@@ -5429,7 +5406,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -5614,6 +5591,13 @@ var FormField = {
       console.log('Failed:', errorInfo);
     };
 
+    form.onFieldExtendValueChange('CorpSupplieryi', function (value) {
+      if (_this_1.state.inputvalue !== value) {
+        _this_1.setState({
+          inputvalue: value
+        });
+      }
+    });
     var sidebar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       style: {
         width: '100vw'
@@ -5689,7 +5673,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -5742,7 +5726,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824185
+      // 1650006710217
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -6268,7 +6252,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -6615,7 +6599,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -6897,7 +6881,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -7174,258 +7158,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
-      open: true,
-      style: {
-        minHeight: document.documentElement.clientHeight,
-        display: this.state.showElem,
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'rgb(255, 255, 255)',
-        position: 'fixed',
-        zIndex: 100
-      },
-      enableDragHandle: true,
-      contentStyle: {
-        color: '#A6A6A6',
-        textAlign: 'center',
-        paddingTop: 42
-      },
-      sidebar: sidebar,
-      onOpenChange: this.methods().onOpenChange
-    }), document.getElementById('MF_APP')))));
-  },
-  onExtraClick: function onExtraClick() {
-    throw new Error('Function not implemented.');
-  },
-  onOpenChange: function onOpenChange() {
-    throw new Error('Function not implemented.');
-  },
-  onCancel: function onCancel() {
-    throw new Error('Function not implemented.');
-  },
-  onSearchBarChange: function onSearchBarChange(value) {
-    throw new Error('Function not implemented.');
-  },
-  onSubmit: function onSubmit(value) {
-    throw new Error('Function not implemented.');
-  },
-  habdlClick: function habdlClick(item) {
-    throw new Error('Function not implemented.');
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = (FormField);
-
-/***/ }),
-
-/***/ "./.debug/src/runtime/SelectDepositField/mobile.tsx":
-/*!**********************************************************!*\
-  !*** ./.debug/src/runtime/SelectDepositField/mobile.tsx ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_mobile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd-mobile */ "antd-mobile");
-/* harmony import */ var antd_mobile__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_mobile__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/asyncSetProps */ "./.debug/src/utils/asyncSetProps.ts");
-/* harmony import */ var _utils_searchUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/searchUtils */ "./.debug/src/utils/searchUtils.ts");
-var __spreadArray = undefined && undefined.__spreadArray || function (to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-    if (ar || !(i in from)) {
-      if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-      ar[i] = from[i];
-    }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-};
-
-
-
-
-
-
-var FormField = {
-  getInitialState: function getInitialState() {
-    var form = this.props.form;
-    return {
-      SearchBarvalue: '',
-      showElem: 'none',
-      inputvalue: '',
-      allData: {
-        type: '0',
-        number: '99999',
-        page: '1',
-        name: ''
-      },
-      listData: []
-    };
-  },
-  handleOk: function handleOk() {
-    throw new Error('Function not implemented.');
-  },
-  handleCancel: function handleCancel() {
-    this.setState({
-      showElem: 'none'
-    });
-  },
-  methods: function methods() {
-    var _this = this;
-
-    return {
-      onOpenChange: function onOpenChange() {
-        var form = this.props.form;
-        var value = form.getFieldValue('RadioField');
-
-        if (value) {
-          if (value === '投标保证金支出' || value === '投标保证金退回') {
-            var newdate = this.state.allData;
-            newdate.isProject = '2';
-            this.asyncSetFieldProps(newdate);
-          } else {
-            var newdate = this.state.allData;
-            newdate.isProject = '1';
-            this.asyncSetFieldProps(newdate);
-          }
-
-          this.setState({
-            isModalVisible: true
-          });
-        } else {
-          antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info('请先选择合同类型', 1);
-        }
-
-        this.setState({
-          showElem: 'inherit'
-        });
-      },
-      handleClick: function handleClick(item) {
-        var form = _this.props.form;
-
-        _this.setState({
-          Inputvalue: item.name,
-          showElem: 'none'
-        }, function () {
-          form.setFieldValue('SelectDeposit', item.name);
-          form.setFieldExtendValue('SelectDeposit', item.name);
-        });
-      },
-      onExtraClick: function onExtraClick() {
-        _this.setState({
-          inputvalue: ''
-        });
-      },
-      onSubmit: function onSubmit(value) {
-        var data = _this.state.allData;
-        data.name = value;
-
-        _this.asyncSetFieldProps(data);
-      },
-      onSearchBarChange: function onSearchBarChange(value) {
-        Object(_utils_searchUtils__WEBPACK_IMPORTED_MODULE_4__["searchBarChange"])(_this, value, '');
-      }
-    };
-  },
-  asyncSetFieldProps: function asyncSetFieldProps(data) {
-    var _this = this;
-
-    var promise = Object(_utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_3__["asyncSetProps"])(_this, data, 'SelectDeposit');
-    promise.then(function (res) {
-      _this.setState({
-        listData: __spreadArray([], res.dataArray, true)
-      });
-    });
-  },
-  fieldDidUpdate: function fieldDidUpdate() {
-    return null;
-  },
-  fieldRender: function fieldRender() {
-    var _this_1 = this; // fix in codepen
-
-
-    var form = this.props.form;
-    var field = form.getFieldInstance('SelectDeposit');
-    var label = form.getFieldProp('SelectDeposit', 'label');
-    var required = form.getFieldProp('SelectDeposit', 'required');
-    var sidebar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      style: {
-        width: '100vw'
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["SearchBar"], {
-      value: this.state.SearchBarvalue,
-      placeholder: "\u8BF7\u8F93\u5165",
-      onSubmit: this.methods().onSubmit,
-      onChange: this.methods().onSearchBarChange,
-      onCancel: this.handleCancel,
-      showCancelButton: true
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["List"], null, this.state.listData.map(function (item, index) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["List"].Item, {
-        onClick: _this_1.methods().handleClick.bind(_this_1, item),
-        key: index,
-        multipleLine: true
-      }, item.accountname);
-    }))); //详情
-
-    if (this.props.runtimeProps.viewMode) {
-      var value = field.getExtendValue() ? field.getExtendValue() : '';
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "field-wrapper"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "m-field-view"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-        className: "m-field-view-label"
-      }, label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "m-field-view-value"
-      }, " ", value)));
-    }
-
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "CorpHouse_class_m"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "field-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-group m-group-mobile"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field m-field-mobile m-mobile-input vertical"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-head",
-      style: {
-        marginLeft: '-7px'
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-      className: "m-field-label"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, required ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      style: {
-        color: '#ea6d5c'
-      }
-    }, "*") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      style: {
-        color: '#fff'
-      }
-    }, "*"), label))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-box"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-content left"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "input-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
-      editable: false,
-      className: "ant-input m-mobile-inner-input",
-      type: "text",
-      extra: "x",
-      onExtraClick: this.methods().onExtraClick,
-      placeholder: "\u8BF7\u9009\u62E9",
-      value: this.state.inputvalue,
-      onClick: this.methods().onOpenChange
-    })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -7691,7 +7424,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -7857,6 +7590,15 @@ var FormField = {
     var field = form.getFieldInstance('SelectHe');
     var label = form.getFieldProp('SelectHe', 'label');
     var required = form.getFieldProp('SelectHe', 'required');
+    form.onFieldExtendValueChange('SelectHe', function (value) {
+      console.log('vakue', value);
+
+      if (_this_1.state.inputvalue !== value) {
+        _this_1.setState({
+          inputvalue: value
+        });
+      }
+    });
     var sidebar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       style: {
         width: '100vw'
@@ -7868,7 +7610,23 @@ var FormField = {
       onChange: this.methods().onSearchBarChange,
       onCancel: this.handleCancel,
       showCancelButton: true
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["List"], null, this.state.listData.map(function (item, index) {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["List"], null, this.state.listData.length === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "fancy-list-empty",
+      style: {
+        maxWidth: '100vw',
+        maxHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '10px,0'
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: 'https://dingyunlaowu.oss-cn-hangzhou.aliyuncs.com/xiezhu//8SyQKD2DCh1638868050008.png',
+      style: {
+        maxWidth: '75%',
+        maxHeight: '75%'
+      }
+    })) : this.state.listData.map(function (item, index) {
       var text = item.xuan === 1 ? '#000000' : '#000000';
       var style = {
         color: text
@@ -7879,7 +7637,7 @@ var FormField = {
         multipleLine: true
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         style: style
-      }, " ", item.accountname));
+      }, " ", item.name));
     }))); //详情
 
     if (this.props.runtimeProps.viewMode) {
@@ -7934,7 +7692,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -7993,10 +7751,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_fancyLists__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/fancyLists */ "./.debug/src/components/fancyLists.tsx");
-/* harmony import */ var _utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/asyncSetProps */ "./.debug/src/utils/asyncSetProps.ts");
-/* harmony import */ var _utils_normalizeUtils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/normalizeUtils */ "./.debug/src/utils/normalizeUtils.ts");
-/* harmony import */ var _utils_searchUtils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utils/searchUtils */ "./.debug/src/utils/searchUtils.ts");
+/* harmony import */ var _utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/asyncSetProps */ "./.debug/src/utils/asyncSetProps.ts");
+/* harmony import */ var _utils_searchUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/searchUtils */ "./.debug/src/utils/searchUtils.ts");
 var __assign = undefined && undefined.__assign || function () {
   __assign = Object.assign || function (t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -8022,8 +7778,6 @@ var __spreadArray = undefined && undefined.__spreadArray || function (to, from, 
   }
   return to.concat(ar || Array.prototype.slice.call(from));
 };
-
-
 
 
 
@@ -8102,14 +7856,14 @@ var FormField = {
         _this.asyncSetFieldProps(data);
       },
       onSearchBarChange: function onSearchBarChange(value) {
-        Object(_utils_searchUtils__WEBPACK_IMPORTED_MODULE_6__["searchBarChange"])(_this, value, '');
+        Object(_utils_searchUtils__WEBPACK_IMPORTED_MODULE_4__["searchBarChange"])(_this, value, '');
       }
     };
   },
   asyncSetFieldProps: function asyncSetFieldProps(data) {
     var _this = this;
 
-    var promise = Object(_utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_4__["asyncSetProps"])(_this, data, 'SelectHeshou');
+    var promise = Object(_utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_3__["asyncSetProps"])(_this, data, 'SelectHeshou');
     promise.then(function (res) {
       var listData = __spreadArray([], res.dataArray, true);
 
@@ -8132,7 +7886,7 @@ var FormField = {
     var label = form.getFieldProp('SelectHeshou', 'label');
     var required = form.getFieldProp('SelectHeshou', 'required');
     var tabs = [{
-      title: '收入合同',
+      title: '收入合同1',
       key: '0'
     }, {
       title: '收入进度款结算',
@@ -8237,19 +7991,35 @@ var FormField = {
           page: 3
         }));
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_fancyLists__WEBPACK_IMPORTED_MODULE_3__["FancyList"], {
-      data: Object(_utils_normalizeUtils__WEBPACK_IMPORTED_MODULE_5__["parseListData"])(this.state.listData, parser),
-      itemClick: this.methods().handleClick
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_fancyLists__WEBPACK_IMPORTED_MODULE_3__["FancyList"], {
-      data: Object(_utils_normalizeUtils__WEBPACK_IMPORTED_MODULE_5__["parseListData"])(this.state.listData, secondaryParser),
-      itemClick: this.methods().handleClick
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_fancyLists__WEBPACK_IMPORTED_MODULE_3__["FancyList"], {
-      data: Object(_utils_normalizeUtils__WEBPACK_IMPORTED_MODULE_5__["parseListData"])(this.state.listData, secondaryParser),
-      itemClick: this.methods().handleClick
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_fancyLists__WEBPACK_IMPORTED_MODULE_3__["FancyList"], {
-      data: Object(_utils_normalizeUtils__WEBPACK_IMPORTED_MODULE_5__["parseListData"])(this.state.listData, secondaryParser),
-      itemClick: this.methods().handleClick
-    })))); //详情
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["List"], null, this.state.listData.length === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "fancy-list-empty",
+      style: {
+        maxWidth: '100vw',
+        maxHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '10px,0'
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: 'https://dingyunlaowu.oss-cn-hangzhou.aliyuncs.com/xiezhu//8SyQKD2DCh1638868050008.png',
+      style: {
+        maxWidth: '75%',
+        maxHeight: '75%'
+      }
+    })) : this.state.listData.map(function (item, index) {
+      var text = item.xuan === 1 ? '#000000' : '#000000';
+      var style = {
+        color: text
+      };
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["List"].Item, {
+        onClick: _this_1.methods().handleClick.bind(_this_1, item),
+        key: index,
+        multipleLine: true
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        style: style
+      }, " ", item.name));
+    }))); //详情
 
     if (this.props.runtimeProps.viewMode) {
       var value = field.getExtendValue() ? field.getExtendValue() : '';
@@ -8303,7 +8073,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -8559,7 +8329,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -8808,7 +8578,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -8861,7 +8631,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824091
+      // 1650006710162
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -9081,7 +8851,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.onOpenChange
     }))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -9117,7 +8887,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824078
+      // 1650006710176
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -9309,7 +9079,7 @@ var FormField = {
       placeholder: "\u8BF7\u9009\u62E9",
       onClick: this.onOpenChange
     }), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -9408,41 +9178,32 @@ var FormField = {
         });
       },
       onExtraClick: function onExtraClick() {
+        var form = _this.props.form;
+
         _this.setState({
           inputvalue: ''
         });
+
+        form.setFieldValue('SelectRelated', '');
+        form.setFieldExtendValue('SelectRelated', '');
+        form.setFieldValue('Moneytest', '');
+        form.setFieldExtendValue('Moneytest', '');
       },
       handleClick: function handleClick(record) {
         var form = _this.props.form;
 
-        if (record.extend_two) {
-          _this.setState({
-            Inputvalue: record.extend_two
-          });
+        _this.setState({
+          inputvalue: record.title
+        });
 
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        } else if (record.extend_five) {
-          _this.setState({
-            Inputvalue: record.extend_five
-          });
-
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        } else if (record.extend_five) {
-          _this.setState({
-            Inputvalue: record.extend_five
-          });
-
-          form.setFieldValue('SelectRelated', record.title);
-          form.setFieldExtendValue('SelectRelated', record.title);
-        }
+        form.setFieldValue('SelectRelated', record.title);
+        form.setFieldExtendValue('SelectRelated', record.title);
+        form.setFieldValue('Moneytest', record.money);
+        form.setFieldExtendValue('Moneytest', record.money);
+        console.log('record', record);
 
         _this.setState({
           showElem: 'none'
-        }, function () {
-          form.setFieldValue('Conmoney', record.money);
-          form.setFieldExtendValue('Conmoney', record.money);
         });
       },
       onSubmit: function onSubmit(value) {
@@ -9715,7 +9476,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -9844,8 +9605,8 @@ var FormField = {
           inputvalue: item.name,
           showElem: 'none'
         }, function () {
-          form.setFieldValue('Jiesmoney', item.detailed_money);
-          form.setFieldExtendValue('Jiesmoney', item.detailed_money);
+          form.setFieldValue('Jiesmoney', item.reply_money);
+          form.setFieldExtendValue('Jiesmoney', item.reply_money);
           form.setFieldValue('SelectSpo', item.name);
           form.setFieldExtendValue('SelectSpo', item.name);
         });
@@ -9965,7 +9726,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -10018,7 +9779,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824132
+      // 1650006710169
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -10259,7 +10020,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -10469,9 +10230,11 @@ var FormField = {
     };
 
     form.onFieldExtendValueChange('Selectjia', function (value) {
-      _this_1.setState({
-        Inputvalue: value
-      });
+      if (_this_1.state.inputvalue !== value) {
+        _this_1.setState({
+          inputvalue: value
+        });
+      }
     });
 
     var onFinishFailed = function onFinishFailed(errorInfo) {
@@ -10552,7 +10315,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -10970,9 +10733,9 @@ var FormField = {
         Object(_components_handleTables__WEBPACK_IMPORTED_MODULE_3__["handleTaxTableStatistics"])(_this, list);
       },
       onInputchange: function onInputchange(types, index, e) {
-        console.log(types, index, e, this);
-        var arr = this.state.materialList;
-        console.log('120', this.state.materialList);
+        console.log(types, index, e, _this);
+        var arr = _this.state.materialList;
+        console.log('120', _this.state.materialList);
         var arrindex = e ? e : '';
         var newindex = index;
         var newtype = types;
@@ -10989,10 +10752,12 @@ var FormField = {
           return item.subtotal;
         }), true);
         var totalMoney = newarr2.reduce(_utils_fpOperations__WEBPACK_IMPORTED_MODULE_6__["fpAdd"], 0);
-        this.setState({
+
+        _this.setState({
           materialList: __spreadArray([], arr, true),
           Inputmoney1: totalMoney.toFixed(2) <= 0.005 ? '' : totalMoney.toFixed(2)
         });
+
         console.log('12', arr);
       },
       handleAddVisible: function handleAddVisible(visible) {
@@ -11629,29 +11394,7 @@ var FormField = {
       className: "m-field-head"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "m-field-label"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u4E0D\u542B\u7A0E\u91D1\u989D\u5408\u8BA1(\u5143)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-box"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-content left"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "input-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
-      editable: false,
-      value: this.state.Inputmoney2,
-      placeholder: "\u81EA\u52A8\u8BA1\u7B97"
-    })))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "field-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-group m-group-mobile"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field m-field-mobile m-select-field"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-head"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "m-field-label"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u542B\u7A0E\u91D1\u989D\u5408\u8BA1(\u5143)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u5408\u8BA1(\u5143)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "m-field-box"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "m-field-content left"
@@ -11662,7 +11405,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -11682,7 +11425,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -11702,7 +11445,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -12581,7 +12324,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -12601,7 +12344,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -12858,7 +12601,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -13115,7 +12858,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.methods().onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -14381,7 +14124,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -14401,7 +14144,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -14421,7 +14164,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -14473,7 +14216,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824125
+      // 1650006710189
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -15718,7 +15461,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -15738,7 +15481,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -15758,7 +15501,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -16543,7 +16286,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -16563,7 +16306,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -16616,7 +16359,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315825786
+      // 1650006710221
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -16808,7 +16551,7 @@ var FormField = {
     console.log('sss');
     console.log(args);
     var newdate = this.state.allData;
-    newdate.rk_id = ['a'];
+    newdate.rk_id = ['b'];
     this.asyncSetFieldProps(newdate, '12');
     this.setState({
       showElem: 'inherit',
@@ -16836,7 +16579,9 @@ var FormField = {
     console.log(item);
     var arr = this.state.materialList;
     var arrindex = this.state.checkindex;
-    arr[arrindex].ke_name = item.value;
+    var itemValue = item.split('/');
+    console.log('99999999999', itemValue);
+    arr[arrindex].ke_name = itemValue;
     this.setState({
       inputvalue: item.value,
       showElem: 'none',
@@ -17090,7 +16835,7 @@ var FormField = {
         onClick: _this_1.habdlClick.bind(_this_1, item),
         key: index,
         multipleLine: true
-      }, item.value);
+      }, item);
     })));
     var treesidebar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
@@ -17521,7 +17266,7 @@ var FormField = {
       value: this.state.Numbervalue5,
       placeholder: "\u8BF7\u8F93\u5165"
     }))))))))) : null))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -17541,7 +17286,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -18311,7 +18056,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -18331,7 +18076,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -18384,7 +18129,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824119
+      // 1650006710194
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -18647,6 +18392,12 @@ var FormField = {
           });
 
           newpage.rk_id = ['d'];
+        } else if (index === 4) {
+          _this_1.setState({
+            detdate: 'e1'
+          });
+
+          newpage.rk_id = ['e'];
         }
 
         _this_1.setState({
@@ -18714,7 +18465,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -19543,7 +19294,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -19563,7 +19314,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -19724,6 +19475,25 @@ var FormField = {
     var _this = this;
 
     return {
+      checkClick: function checkClick(item) {
+        console.log('0000005');
+        var cDataid = [item.id];
+        var newdate = _this.state.allData;
+        newdate.ck_name = item.name;
+        newdate.type = 0;
+        newdate.page = 1;
+        newdate.isHouse = '2';
+        var dtar = item.name;
+        console.log(cDataid);
+        newdate.rk_id = __spreadArray([_this.state.detdate], cDataid, true);
+
+        _this.asyncSetFieldProps(newdate, 1);
+
+        _this.setState({
+          chenkdata: dtar,
+          showElem3: 'none'
+        });
+      },
       iconClick: function iconClick() {
         _this.setState({
           chenkdata: '',
@@ -20717,7 +20487,7 @@ var FormField = {
       placeholder: "\u81EA\u52A8\u8BA1\u7B97",
       readOnly: true
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -20737,7 +20507,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -20757,7 +20527,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -21768,7 +21538,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -21788,7 +21558,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -22808,7 +22578,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -22828,7 +22598,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -22881,7 +22651,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824113
+      // 1650006710182
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -23274,7 +23044,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -24211,7 +23981,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -24231,7 +24001,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -24251,7 +24021,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -25177,7 +24947,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -25197,7 +24967,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -25984,7 +25754,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -26004,7 +25774,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -27155,7 +26925,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -27175,7 +26945,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -27195,7 +26965,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -28187,7 +27957,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -28207,7 +27977,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -28227,7 +27997,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -29183,7 +28953,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -29203,7 +28973,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -29223,7 +28993,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -29402,10 +29172,16 @@ var FormField = {
       },
       onOpenChange: function onOpenChange(index) {
         console.log('0000001');
+
+        _this.setState({
+          SearchBarvalue: ''
+        });
+
         var newData = _this.state.allData;
         newData.rk_id = ['-1'];
+        newData.name = '';
 
-        _this.asyncSetFieldProps(newData);
+        _this.asyncSetFieldProps(newData, 0, true);
 
         _this.setState({
           showElem: 'inherit',
@@ -30030,7 +29806,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -30050,7 +29826,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -31254,7 +31030,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -31274,7 +31050,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -31294,7 +31070,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -31346,7 +31122,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824097
+      // 1650006710205
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -31707,7 +31483,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -32899,7 +32675,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -32919,7 +32695,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -32939,7 +32715,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -33758,7 +33534,7 @@ var FormField = {
     }), "\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       className: "add-button-text"
     }, "\u589E\u52A0\u660E\u7EC6"))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -33778,7 +33554,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -35000,7 +34776,7 @@ var FormField = {
       value: this.state.Inputmoney1,
       placeholder: "\u81EA\u52A8\u8BA1\u7B97"
     })))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -35020,7 +34796,7 @@ var FormField = {
       sidebar: sidebar,
       onOpenChange: this.methods().onOpenChange
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -35040,7 +34816,7 @@ var FormField = {
       sidebar: treesidebar,
       onOpenChange: this.methods().onOpenChange2
     }), document.getElementById('MF_APP')), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -35092,7 +34868,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824181
+      // 1650006710211
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35325,7 +35101,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.onOpenChange
     }))))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -35361,7 +35137,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824086
+      // 1650006710200
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35562,7 +35338,7 @@ var FormField = {
       index: 1,
       title: true
     }, {
-      key: 'extend_first',
+      key: 'sub_unit',
       label: '分包单位',
       index: 2
     }, {
@@ -35705,7 +35481,7 @@ var FormField = {
       value: this.state.inputvalue,
       onClick: this.onOpenChange
     })))))), /*#__PURE__*/Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
-      className: "isvzhukuaiwarehousing",
+      className: "isvzhukuaizkgl",
       open: true,
       style: {
         minHeight: document.documentElement.clientHeight,
@@ -35875,7 +35651,7 @@ var SwapDemoSuite = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1649315824012
+      // 1650006710136
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);

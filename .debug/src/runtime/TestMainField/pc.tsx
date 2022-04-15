@@ -783,7 +783,7 @@ const FormField: ISwapFormField = {
 
           {/* 树形 */}
 
-          <Modal className="isvzhukuaiwarehousing" 
+          <Modal className="isvzhukuaizkgl" 
             title="选择物资"
             width={1000}
             visible={this.state.isModalVisibletree}

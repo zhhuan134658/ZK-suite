@@ -239,6 +239,7 @@ const FormField: ISwapFormField = {
           isModalVisibletree: false,
           selectedRowKeys: [],
         });
+        _this.methods().updateTable(lData);
       },
       handleMaterialCancel() {
         _this.setState({ isModalVisibletree: false, selectedRowKeys: [] });
@@ -253,6 +254,37 @@ const FormField: ISwapFormField = {
         _this.setState({
           dataSource: [],
         });
+      },
+      updateTable(list: any) {
+        const { form } = _this.props;
+        const field = form.getFieldInstance('TestBidding_Table');
+        form.setFieldValue('TestBidding_Table', []); //清空明细
+        console.log('打印表格明细', field);
+
+        list.map((item: any) => {
+          const newlist = [
+            { key: 'TestBidding_name', value: '1' },
+            { key: 'TestBidding_size', value: '1' },
+            { key: 'TestBidding_unit', value: '1' },
+            { key: 'TestBidding_number', value: '1' },
+            { key: 'TestBidding_purchase_unit', value: '1' },
+            { key: 'TestBidding_purchase_riqi', value: '1' },
+            { key: 'TestBidding_purchase_address', value: '1' },
+            { key: 'TestBidding_candidate_list', value: '1' },
+          ];
+          newlist[0].value = item.name || '';
+          newlist[1].value = item.unit || '';
+          newlist[2].value = item.size || '';
+          newlist[3].value = item.number || '';
+          newlist[4].value = item.purchase_unit || '';
+          newlist[5].value = item.purchase_riqi || '';
+          newlist[6].value = item.purchase_address || '';
+          newlist[7].value = item.candidate_list || '';
+
+          field.tbody.add(newlist);
+        });
+
+        console.log('打印表格明细', field.getValue());
       },
     };
   },
@@ -682,7 +714,7 @@ const FormField: ISwapFormField = {
             </div>
           </div>
           <div style={{ marginTop: '10px' }}>
-            <Table
+            {/* <Table
               scroll={{ x: '1500px' }}
               components={components}
               className="full-size-editable"
@@ -691,12 +723,11 @@ const FormField: ISwapFormField = {
               dataSource={dataSource}
               columns={columns as ColumnTypes}
               pagination={false}
-            />
+            /> */}
             <div
               style={{
                 display: 'flex',
                 marginTop: '16px',
-                marginBottom: '16px',
               }}
             >
               <Button

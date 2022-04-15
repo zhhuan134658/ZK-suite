@@ -525,9 +525,9 @@ const ImportDialog: React.FC<{
   ];
   return (
     <div>
-      {/* <Button type="primary" ghost onClick={() => setModalVisible(true)}>
+      <Button type="primary" ghost onClick={() => setModalVisible(true)}>
         导入数据
-      </Button> */}
+      </Button>
       <style>{`
         .integrity-false {
             color: red;
@@ -537,7 +537,7 @@ const ImportDialog: React.FC<{
             padding-bottom: 8px;
         }
       `}</style>
-      <Modal className="isvzhukuaiwarehousing" 
+      <Modal className="isvzhukuaizkgl" 
         visible={modalVisible}
         onCancel={handleCancel}
         width={750}

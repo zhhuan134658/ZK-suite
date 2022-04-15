@@ -178,6 +178,9 @@ const FormField: IFormField = {
             } else if (index === 3) {
               this.setState({ detdate: 'd1' });
               newpage.rk_id = ['d'];
+            } else if (index === 4) {
+              this.setState({ detdate: 'e1' });
+              newpage.rk_id = ['e'];
             }
             this.setState({
               allData: newpage,
@@ -243,7 +246,7 @@ const FormField: IFormField = {
             {/* 使用这种方式，将组件挂在到根元素下，防止样式污染 */}
 
             {createPortal(
-              <Drawer className="isvzhukuaiwarehousing" 
+              <Drawer className="isvzhukuaizkgl" 
                 open={true}
                 style={{
                   minHeight: document.documentElement.clientHeight,

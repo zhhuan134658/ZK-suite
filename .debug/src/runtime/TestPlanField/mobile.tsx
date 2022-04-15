@@ -121,9 +121,12 @@ const FormField: ISwapFormField = {
       },
       onOpenChange(index: any) {
         console.log('0000001');
+        _this.setState({ SearchBarvalue: '' });
+
         const newData = _this.state.allData;
         newData.rk_id = ['-1'];
-        _this.asyncSetFieldProps(newData);
+        newData.name = '';
+        _this.asyncSetFieldProps(newData, 0, true);
         _this.setState({
           showElem: 'inherit',
           checkindex: index,
@@ -795,7 +798,7 @@ const FormField: ISwapFormField = {
 
         {/* 物资明细 */}
         {createPortal(
-          <Drawer className="isvzhukuaiwarehousing" 
+          <Drawer className="isvzhukuaizkgl" 
             open={true}
             style={{
               minHeight: document.documentElement.clientHeight,
@@ -818,7 +821,7 @@ const FormField: ISwapFormField = {
           document.getElementById('MF_APP'),
         )}
         {createPortal(
-          <Drawer className="isvzhukuaiwarehousing" 
+          <Drawer className="isvzhukuaizkgl" 
             open={true}
             style={{
               minHeight: document.documentElement.clientHeight,

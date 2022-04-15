@@ -137,7 +137,7 @@ const HandledDetailDialogMobile: React.FC<{
               <Button
                 type="primary"
                 onClick={() => {
-                  wrappedFinish(formData);
+                  setVisible(true);
                 }}
               >
                 提交
@@ -419,14 +419,26 @@ const SupplierMobileDialog: React.FC<{
             // onFinish={wrappedFinish}
             // onFinishFailed={wrappedFinishFailed}
             renderFooter={
-              <Button
-                type="primary"
-                onClick={() => {
-                  wrappedFinish(formData);
-                }}
-              >
-                提交
-              </Button>
+              <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                <Button
+                  style={{ width: '40%' }}
+                  type="primary"
+                  onClick={() => {
+                    wrappedFinish(formData);
+                  }}
+                >
+                  提交
+                </Button>
+                <Button
+                  style={{ width: '40%' }}
+                  type="primary"
+                  onClick={() => {
+                    setVisible(false);
+                  }}
+                >
+                  取消
+                </Button>
+              </div>
             }
           >
             <InputItem
