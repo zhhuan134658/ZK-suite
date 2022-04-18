@@ -1,5 +1,5 @@
 //import { Tree } from 'antd';
-import { Drawer, InputItem, SearchBar, Tabs } from 'antd-mobile';
+import { Drawer, InputItem, SearchBar, Tabs, Toast } from 'antd-mobile';
 import React from 'react';
 import { createPortal } from 'react-dom';
 import {
@@ -342,7 +342,7 @@ const FormField: ISwapFormField = {
         handleTaxTableStatistics(_this, list);
       },
       onInputchange(types: any, index: number, e: any) {
-        console.log('0000009');
+        console.log('0000009', e);
         const dataArray = _this.state.materialList;
         dataArray[index][types] = e;
         const row = dataArray[index];
@@ -351,6 +351,7 @@ const FormField: ISwapFormField = {
         _this.setState({
           materialList: [...data],
         });
+        console.log('0000009', [...data]);
         handleTaxTableStatistics(_this, data);
       },
       handleAddVisible(visible: boolean) {
@@ -408,6 +409,10 @@ const FormField: ISwapFormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate() {
@@ -459,6 +464,7 @@ const FormField: ISwapFormField = {
       //   const [form] = Form.useForm();
       const newdate = this.state.allData;
       newdate.wz_add = values;
+
       this.asyncSetFieldProps(newdate);
       this.setState({
         popUpVisible: false,

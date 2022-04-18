@@ -1,4 +1,4 @@
-import { Drawer, InputItem, List, SearchBar } from 'antd-mobile';
+import { Drawer, InputItem, List, SearchBar, Toast } from 'antd-mobile';
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { SupplierMobileDialog } from '../../components/addDetail';
@@ -29,6 +29,9 @@ const FormField: ISwapFormField = {
         listData: [...res.dataArray],
         supplierTypes: dropDownData,
       });
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   methods() {
@@ -147,7 +150,7 @@ const FormField: ISwapFormField = {
               <div className="m-field m-field-mobile m-mobile-input vertical">
                 <div className="m-field-head" style={{ marginLeft: '-7px' }}>
                   <label className="m-field-label">
-                    <span style={{ color: 'red' }}>
+                    <span>
                       {required ? (
                         <span style={{ color: '#ea6d5c' }}>*</span>
                       ) : (

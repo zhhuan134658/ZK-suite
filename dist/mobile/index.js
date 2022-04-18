@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "030ab7110f0726a202d3";
+/******/ 	var hotCurrentHash = "1b1e9253b3c4edb050ba";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -3408,8 +3408,14 @@ var HandledDetailDialogMobile = function HandledDetailDialogMobile(props) {
       }
     }
 
-    setVisible(false);
-    onFinish(parsedValues);
+    console.log('88888', parsedValues);
+
+    if (parsedValues.name === '' || parsedValues.unit === '' || parsedValues.size === '' || parsedValues.type === '') {
+      antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Toast"].info('存在未填写', 1);
+    } else {
+      setVisible(false);
+      onFinish(parsedValues);
+    }
   };
 
   var wrappedFinishFailed = function wrappedFinishFailed(errorInfo) {
@@ -3425,11 +3431,11 @@ var HandledDetailDialogMobile = function HandledDetailDialogMobile(props) {
       padding: 0,
       display: 'flex',
       alignItems: 'center',
-      lineHeight: '61px',
+      lineHeight: '72px',
       justifyContent: 'center',
       borderRadius: '50%',
-      width: '48px',
-      height: '48px',
+      width: '60px',
+      height: '60px',
       zIndex: 1600,
       boxShadow: '0px 0px 4px rgba(0,0,0,0.2)'
     };
@@ -3474,12 +3480,28 @@ var HandledDetailDialogMobile = function HandledDetailDialogMobile(props) {
   , {
     // onFinish={wrappedFinish}
     // onFinishFailed={wrappedFinishFailed}
-    renderFooter: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    renderFooter: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'space-around'
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      style: {
+        width: '40%'
+      },
       type: "primary",
       onClick: function onClick() {
-        setVisible(true);
+        wrappedFinish(formData);
       }
-    }, "\u63D0\u4EA4")
+    }, "\u63D0\u4EA4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+      style: {
+        width: '40%'
+      },
+      type: "primary",
+      onClick: function onClick() {
+        setVisible(false);
+      }
+    }, "\u53D6\u6D88"))
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["InputItem"], {
     placeholder: "\u8BF7\u586B\u5199\u7269\u54C1\u540D\u79F0",
     onChange: function onChange(val) {
@@ -3534,7 +3556,7 @@ var HandledDetailDialogMobile = function HandledDetailDialogMobile(props) {
       setCascadeVisible(true);
       console.log(cascadeData);
     }
-  }, "\u7269\u8D44\u540D\u79F0"))))));
+  }, "\u7269\u8D44\u7C7B\u578B"))))));
 };
 
 var DetailDialogDesktop = function DetailDialogDesktop(props) {
@@ -3882,6 +3904,7 @@ var StorageMobileDialog = function StorageMobileDialog(props) {
     onClick: function onClick() {
       setVisible(true);
     },
+    type: "primary",
     style: mbuttomStyle
   }, "\u65B0\u589E\u4ED3\u5E93"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_1__["Modal"], {
     className: "isvzhukuaizkgl",
@@ -4282,17 +4305,14 @@ var handleSaveTaxTable = function handleSaveTaxTable(_this, dataList, row, key) 
   //   }
 
 
-  newData.splice(index, 1, __assign(__assign({}, item), row));
-
-  for (var key_1 in row) {
-    if (row[key_1]) {
-      row[key_1] = row[key_1].toString();
-    }
-  }
-
-  if (!(regex.test(row.tax_rate) || regex.test(row.det_quantity))) {
-    return newData;
-  }
+  newData.splice(index, 1, __assign(__assign({}, item), row)); //   for (const key in row) {
+  //     if (row[key]) {
+  //       row[key] = row[key].toString();
+  //     }
+  //   }
+  //   if (!(regex.test(row.tax_rate) || regex.test(row.det_quantity))) {
+  //     return newData;
+  //   }
 
   switch (key) {
     case 'no_unit_price':
@@ -4305,6 +4325,7 @@ var handleSaveTaxTable = function handleSaveTaxTable(_this, dataList, row, key) 
       if (regex.test(row.no_unit_price) && regex.test(row.tax_rate)) {
         var taxBase = 1 + row.tax_rate * 0.01;
         var taxedUnitPrice = Object(_utils_fpOperations__WEBPACK_IMPORTED_MODULE_0__["fpMul"])(row.no_unit_price, taxBase);
+        console.log('2213123231231', taxedUnitPrice);
         newData[index].unit_price = Object(_utils_fpOperations__WEBPACK_IMPORTED_MODULE_0__["toFixed"])(taxedUnitPrice, 2);
       } else if (!regex.test(row.no_unit_price) && regex.test(row.tax_rate) && regex.test(row.unit_price)) {
         var taxBase = 1 + row.tax_rate * 0.01;
@@ -4428,9 +4449,9 @@ var handleSaveTaxTable = function handleSaveTaxTable(_this, dataList, row, key) 
     }
   }
 
-  for (var key_2 in newData[index]) {
-    if (newData[index][key_2]) {
-      newData[index][key_2] = newData[index][key_2].toString();
+  for (var key_1 in newData[index]) {
+    if (newData[index][key_1]) {
+      newData[index][key_1] = newData[index][key_1].toString();
     }
   }
 
@@ -4878,7 +4899,7 @@ var purColumns = [{
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710225
+      // 1650260976266
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -5250,6 +5271,10 @@ var FormField = {
         listData: __spreadArray([], res.dataArray, true),
         supplierTypes: dropDownData
       });
+
+      if (res.message) {
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
+      }
     });
   },
   methods: function methods() {
@@ -5380,11 +5405,7 @@ var FormField = {
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
       className: "m-field-label"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      style: {
-        color: 'red'
-      }
-    }, required ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, required ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
       style: {
         color: '#ea6d5c'
       }
@@ -5514,6 +5535,10 @@ var FormField = {
         listData: __spreadArray([], res.dataArray, true),
         supplierTypes: dropDownData
       });
+
+      if (res.message) {
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
+      }
     });
   },
   methods: function methods() {
@@ -5726,7 +5751,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710217
+      // 1650260976248
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -8631,7 +8656,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710162
+      // 1650260976197
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -8887,7 +8912,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710176
+      // 1650260976258
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -9779,7 +9804,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710169
+      // 1650260976224
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -10179,6 +10204,10 @@ var FormField = {
         listData: __spreadArray([], res.dataArray, true),
         supplierTypes: dropDownData
       });
+
+      if (res.message) {
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -10829,6 +10858,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -11891,6 +11924,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -12986,6 +13023,12 @@ var FormField = {
       }, {
         title: '含税金额(元)',
         dataIndex: 'amount_tax'
+      }, {
+        title: '含税金额(元)',
+        dataIndex: 'amount_tax'
+      }, {
+        title: '含税金额(元)',
+        dataIndex: 'amount_tax'
       }],
       Inputmoney1: '',
       checkData: [],
@@ -13369,6 +13412,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -14216,7 +14263,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710189
+      // 1650260976235
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -14748,7 +14795,7 @@ var FormField = {
 
     var _this = this;
 
-    var promise = Object(_utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_4__["asyncSetProps"])(_this, data, 'TestOut');
+    var promise = Object(_utils_asyncSetProps__WEBPACK_IMPORTED_MODULE_4__["asyncSetProps"])(_this, data, 'TestCun');
     promise.then(function (res) {
       console.log('1234543=======', res);
       res.dataArray.forEach(function (e, i) {
@@ -14803,6 +14850,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -14841,8 +14892,8 @@ var FormField = {
     var _this_1 = this;
 
     var form = this.props.form;
-    var field = form.getFieldInstance('TestOut');
-    var label = form.getFieldProp('TestOut', 'label');
+    var field = form.getFieldInstance('TestCun');
+    var label = form.getFieldProp('TestCun', 'label');
     var parsers = {
       materialParser: [{
         key: 'name',
@@ -15922,6 +15973,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -16359,7 +16414,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710221
+      // 1650260976277
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -17693,6 +17748,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -18129,7 +18188,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710194
+      // 1650260976241
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -18893,6 +18952,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -19892,6 +19955,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -21025,6 +21092,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -22651,7 +22722,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710182
+      // 1650260976262
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -23562,6 +23633,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -24525,6 +24600,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -25392,6 +25471,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -26284,6 +26367,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -27356,6 +27443,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -28524,6 +28615,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -29422,6 +29517,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -30268,7 +30367,7 @@ var FormField = {
         Object(_components_handleTables__WEBPACK_IMPORTED_MODULE_3__["handleTaxTableStatistics"])(_this, list);
       },
       onInputchange: function onInputchange(types, index, e) {
-        console.log('0000009');
+        console.log('0000009', e);
         var dataArray = _this.state.materialList;
         dataArray[index][types] = e;
         var row = dataArray[index];
@@ -30279,6 +30378,7 @@ var FormField = {
           materialList: __spreadArray([], data, true)
         });
 
+        console.log('0000009', __spreadArray([], data, true));
         Object(_components_handleTables__WEBPACK_IMPORTED_MODULE_3__["handleTaxTableStatistics"])(_this, data);
       },
       handleAddVisible: function handleAddVisible(visible) {
@@ -30351,6 +30451,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -31122,7 +31226,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710205
+      // 1650260976253
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -31995,6 +32099,10 @@ var FormField = {
 
         default:
           break;
+      }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -33151,6 +33259,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -34080,6 +34192,10 @@ var FormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate: function fieldDidUpdate() {
@@ -34868,7 +34984,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710211
+      // 1650260976273
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35137,7 +35253,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710200
+      // 1650260976229
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35651,7 +35767,7 @@ var SwapDemoSuite = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650006710136
+      // 1650260976183
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);

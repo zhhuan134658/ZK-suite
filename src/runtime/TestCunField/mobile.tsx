@@ -438,7 +438,7 @@ const FormField: ISwapFormField = {
   },
   asyncSetFieldProps(data: any, type = 0, updateCascade = true) {
     const _this = this;
-    const promise = asyncSetProps(_this, data, 'TestOut');
+    const promise = asyncSetProps(_this, data, 'TestCun');
     promise.then(res => {
       console.log('1234543=======', res);
       res.dataArray.forEach((e, i) => {
@@ -484,6 +484,9 @@ const FormField: ISwapFormField = {
           break;
         default:
           break;
+      }
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },
@@ -554,8 +557,8 @@ const FormField: ISwapFormField = {
   },
   fieldRender() {
     const { form } = this.props;
-    const field = form.getFieldInstance('TestOut');
-    const label = form.getFieldProp('TestOut', 'label');
+    const field = form.getFieldInstance('TestCun');
+    const label = form.getFieldProp('TestCun', 'label');
     const parsers = {
       materialParser: [
         {

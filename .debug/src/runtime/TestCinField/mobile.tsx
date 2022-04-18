@@ -72,6 +72,14 @@ const FormField: ISwapFormField = {
           title: '含税金额(元)',
           dataIndex: 'amount_tax',
         },
+        {
+          title: '含税金额(元)',
+          dataIndex: 'amount_tax',
+        },
+        {
+          title: '含税金额(元)',
+          dataIndex: 'amount_tax',
+        },
       ],
       Inputmoney1: '',
       checkData: [],
@@ -413,6 +421,9 @@ const FormField: ISwapFormField = {
           break;
         default:
           break;
+      }
+      if (res.message) {
+        Toast.info(res.message, 1);
       }
     });
   },

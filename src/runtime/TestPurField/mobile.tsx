@@ -1,5 +1,5 @@
 //import { Tree } from 'antd';
-import { Drawer, InputItem, SearchBar, Tabs } from 'antd-mobile';
+import { Drawer, InputItem, SearchBar, Tabs, Toast } from 'antd-mobile';
 import React from 'react';
 import { createPortal } from 'react-dom';
 import {
@@ -72,6 +72,14 @@ const FormField: ISwapFormField = {
         {
           title: '含税金额(元)',
           dataIndex: 'amount_tax',
+        },
+        {
+          title: '已入库量',
+          dataIndex: 'quantity_rk',
+        },
+        {
+          title: '总计划量',
+          dataIndex: 'quantity_zong',
         },
       ],
       Inputmoney1: '',
@@ -342,7 +350,7 @@ const FormField: ISwapFormField = {
         handleTaxTableStatistics(_this, list);
       },
       onInputchange(types: any, index: number, e: any) {
-        console.log('0000009');
+        console.log('0000009', e);
         const dataArray = _this.state.materialList;
         dataArray[index][types] = e;
         const row = dataArray[index];
@@ -351,6 +359,7 @@ const FormField: ISwapFormField = {
         _this.setState({
           materialList: [...data],
         });
+        console.log('0000009', [...data]);
         handleTaxTableStatistics(_this, data);
       },
       handleAddVisible(visible: boolean) {
@@ -408,6 +417,10 @@ const FormField: ISwapFormField = {
         default:
           break;
       }
+
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate() {
@@ -459,6 +472,7 @@ const FormField: ISwapFormField = {
       //   const [form] = Form.useForm();
       const newdate = this.state.allData;
       newdate.wz_add = values;
+
       this.asyncSetFieldProps(newdate);
       this.setState({
         popUpVisible: false,
@@ -1064,6 +1078,60 @@ const FormField: ISwapFormField = {
                                             clear
                                             value={item.amount_tax}
                                             placeholder="自动计算"
+                                          ></InputItem>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="field-wrapper">
+                              <div className="m-group m-group-mobile">
+                                <div className="m-field-wrapper">
+                                  <div className="m-field m-field-mobile m-select-field">
+                                    <div className="m-field-head">
+                                      <div className="m-field-label">
+                                        <span>已入库量</span>
+                                      </div>
+                                    </div>
+                                    <div className="m-field-box">
+                                      <div className="m-field-content left">
+                                        <div className="input-wrapper">
+                                          <InputItem
+                                            editable={false}
+                                            clear
+                                            value={item.quantity_rk}
+                                            placeholder="自动获取"
+                                          ></InputItem>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="field-wrapper">
+                              <div className="m-group m-group-mobile">
+                                <div className="m-field-wrapper">
+                                  <div className="m-field m-field-mobile m-select-field">
+                                    <div className="m-field-head">
+                                      <div className="m-field-label">
+                                        <span>总计划量</span>
+                                      </div>
+                                    </div>
+                                    <div className="m-field-box">
+                                      <div className="m-field-content left">
+                                        <div className="input-wrapper">
+                                          <InputItem
+                                            editable={false}
+                                            clear
+                                            value={item.quantity_zong}
+                                            placeholder="自动获取"
                                           ></InputItem>
                                         </div>
                                       </div>

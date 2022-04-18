@@ -69,14 +69,14 @@ const handleSaveTaxTable = (
   //     row['det_quantity'] = 0;
   //   }
   newData.splice(index, 1, { ...item, ...row });
-  for (const key in row) {
-    if (row[key]) {
-      row[key] = row[key].toString();
-    }
-  }
-  if (!(regex.test(row.tax_rate) || regex.test(row.det_quantity))) {
-    return newData;
-  }
+  //   for (const key in row) {
+  //     if (row[key]) {
+  //       row[key] = row[key].toString();
+  //     }
+  //   }
+  //   if (!(regex.test(row.tax_rate) || regex.test(row.det_quantity))) {
+  //     return newData;
+  //   }
   switch (key) {
     case 'no_unit_price':
       if (!regex.test(row.unit_price)) {
@@ -87,6 +87,7 @@ const handleSaveTaxTable = (
       if (regex.test(row.no_unit_price) && regex.test(row.tax_rate)) {
         const taxBase = 1 + row.tax_rate * 0.01;
         const taxedUnitPrice = fpMul(row.no_unit_price, taxBase);
+        console.log('2213123231231', taxedUnitPrice);
         newData[index].unit_price = toFixed(taxedUnitPrice, 2);
       } else if (
         !regex.test(row.no_unit_price) &&

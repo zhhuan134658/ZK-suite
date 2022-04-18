@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, InputItem, List, Picker, Modal } from 'antd-mobile';
+import { Button, InputItem, List, Picker, Modal, Toast } from 'antd-mobile';
 import {
   Modal as PCModal,
   Form as PCForm,
@@ -74,8 +74,18 @@ const HandledDetailDialogMobile: React.FC<{
         }
       }
     }
-    setVisible(false);
-    onFinish(parsedValues);
+    console.log('88888', parsedValues);
+    if (
+      parsedValues.name === '' ||
+      parsedValues.unit === '' ||
+      parsedValues.size === '' ||
+      parsedValues.type === ''
+    ) {
+      Toast.info('存在未填写', 1);
+    } else {
+      setVisible(false);
+      onFinish(parsedValues);
+    }
   };
   const wrappedFinishFailed = (errorInfo: any) => {
     // setVisible(false);
@@ -89,11 +99,11 @@ const HandledDetailDialogMobile: React.FC<{
       padding: 0,
       display: 'flex',
       alignItems: 'center',
-      lineHeight: '61px',
+      lineHeight: '72px',
       justifyContent: 'center',
       borderRadius: '50%',
-      width: '48px',
-      height: '48px',
+      width: '60px',
+      height: '60px',
       zIndex: 1600,
       boxShadow: '0px 0px 4px rgba(0,0,0,0.2)',
     };
@@ -116,6 +126,7 @@ const HandledDetailDialogMobile: React.FC<{
         >
           <AddOutline fontSize={32} />
         </Button>,
+
         document.getElementById('MF_APP'),
       )}
       <Modal
@@ -134,14 +145,26 @@ const HandledDetailDialogMobile: React.FC<{
             // onFinish={wrappedFinish}
             // onFinishFailed={wrappedFinishFailed}
             renderFooter={
-              <Button
-                type="primary"
-                onClick={() => {
-                  setVisible(true);
-                }}
-              >
-                提交
-              </Button>
+              <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                <Button
+                  style={{ width: '40%' }}
+                  type="primary"
+                  onClick={() => {
+                    wrappedFinish(formData);
+                  }}
+                >
+                  提交
+                </Button>
+                <Button
+                  style={{ width: '40%' }}
+                  type="primary"
+                  onClick={() => {
+                    setVisible(false);
+                  }}
+                >
+                  取消
+                </Button>
+              </div>
             }
           >
             <InputItem
@@ -212,7 +235,7 @@ const HandledDetailDialogMobile: React.FC<{
                   console.log(cascadeData);
                 }}
               >
-                物资名称
+                物资类型
               </List.Item>
             </Picker>
           </List>
@@ -557,6 +580,7 @@ const StorageMobileDialog: React.FC<{
         onClick={() => {
           setVisible(true);
         }}
+        type="primary"
         style={mbuttomStyle}
       >
         新增仓库

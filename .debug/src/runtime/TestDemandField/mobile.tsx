@@ -327,6 +327,9 @@ const FormField: ISwapFormField = {
         default:
           break;
       }
+      if (res.message) {
+        Toast.info(res.message, 1);
+      }
     });
   },
   fieldDidUpdate() {
