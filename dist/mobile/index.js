@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1b1e9253b3c4edb050ba";
+/******/ 	var hotCurrentHash = "7e13bda00625edf6891c";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -4899,7 +4899,7 @@ var purColumns = [{
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976266
+      // 1650424712076
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -5751,7 +5751,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976248
+      // 1650424712059
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -6804,34 +6804,30 @@ var FormField = {
       });
     });
   },
-  fieldDidUpdate: function fieldDidUpdate() {
-    if (!this.props.runtimeProps.viewMode) {
-      console.log('发起页：fieldDidUpdate');
-      var editData = {
-        hanmoney: 0,
-        nomoney: 0,
-        detailname: '',
-        detailedData: [] //物资明细
-
-      };
-
-      if (this.state.Inputmoney1) {
-        editData.hanmoney = Number(this.state.Inputmoney1);
-      }
-
-      if (this.state.Inputmoney2) {
-        editData.nomoney = Number(this.state.Inputmoney2);
-      }
-
-      editData.detailname = this.state.chenkdata;
-      editData.detailedData = this.state.materialList;
-      var form = this.props.form;
-      form.setFieldValue('TestPur', editData);
-      form.setFieldExtendValue('TestPur', {
-        data: editData
-      });
-    }
-  },
+  //   fieldDidUpdate() {
+  //     if (!this.props.runtimeProps.viewMode) {
+  //       console.log('发起页：fieldDidUpdate');
+  //       const editData = {
+  //         hanmoney: 0,
+  //         nomoney: 0,
+  //         detailname: '',
+  //         detailedData: [], //物资明细
+  //       };
+  //       if (this.state.inputvalue) {
+  //         editData.hanmoney = Number(this.state.inputvalue);
+  //       }
+  //       if (this.state.Inputmoney2) {
+  //         editData.nomoney = Number(this.state.Inputmoney2);
+  //       }
+  //         editData.detailname = this.state.chenkdata;
+  //         editData.detailedData = this.state.materialList;
+  //       const { form } = this.props;
+  //       form.setFieldValue('TestPur', editData);
+  //       form.setFieldExtendValue('TestPur', {
+  //         data: editData,
+  //       });
+  //     }
+  //   },
   fieldRender: function fieldRender() {
     // fix in codepen
     var form = this.props.form;
@@ -7067,34 +7063,30 @@ var FormField = {
       });
     });
   },
-  fieldDidUpdate: function fieldDidUpdate() {
-    if (!this.props.runtimeProps.viewMode) {
-      console.log('发起页：fieldDidUpdate');
-      var editData = {
-        hanmoney: 0,
-        nomoney: 0,
-        detailname: '',
-        detailedData: [] //物资明细
-
-      };
-
-      if (this.state.Inputmoney1) {
-        editData.hanmoney = Number(this.state.Inputmoney1);
-      }
-
-      if (this.state.Inputmoney2) {
-        editData.nomoney = Number(this.state.Inputmoney2);
-      }
-
-      editData.detailname = this.state.chenkdata;
-      editData.detailedData = this.state.materialList;
-      var form = this.props.form;
-      form.setFieldValue('TestPur', editData);
-      form.setFieldExtendValue('TestPur', {
-        data: editData
-      });
-    }
-  },
+  //   fieldDidUpdate() {
+  //     if (!this.props.runtimeProps.viewMode) {
+  //       console.log('发起页：fieldDidUpdate');
+  //       const editData = {
+  //         hanmoney: 0,
+  //         nomoney: 0,
+  //         detailname: '',
+  //         detailedData: [], //物资明细
+  //       };
+  //       if (this.state.Inputmoney1) {
+  //         editData.hanmoney = Number(this.state.Inputmoney1);
+  //       }
+  //       if (this.state.Inputmoney2) {
+  //         editData.nomoney = Number(this.state.Inputmoney2);
+  //       }
+  //       editData.detailname = this.state.chenkdata;
+  //       editData.detailedData = this.state.materialList;
+  //       const { form } = this.props;
+  //       form.setFieldValue('TestPur', editData);
+  //       form.setFieldExtendValue('TestPur', {
+  //         data: editData,
+  //       });
+  //     }
+  //   },
   fieldRender: function fieldRender() {
     // fix in codepen
     var form = this.props.form;
@@ -8656,7 +8648,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976197
+      // 1650424712039
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -8912,7 +8904,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976258
+      // 1650424712030
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -9804,7 +9796,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976224
+      // 1650424712045
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -10861,7 +10853,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -11927,7 +11919,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -12267,7 +12259,7 @@ var FormField = {
         }
       }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["DatePicker"], {
         mode: "date",
-        title: "Select Date",
+        title: "\u9009\u62E9\u65F6\u95F4",
         extra: "Optional",
         value: _this_1.state.datadate,
         onChange: function onChange(date) {
@@ -13024,11 +13016,11 @@ var FormField = {
         title: '含税金额(元)',
         dataIndex: 'amount_tax'
       }, {
-        title: '含税金额(元)',
-        dataIndex: 'amount_tax'
+        title: '已入库量',
+        dataIndex: 'quantity_rk'
       }, {
-        title: '含税金额(元)',
-        dataIndex: 'amount_tax'
+        title: '总计划量',
+        dataIndex: 'quantity_zong'
       }],
       Inputmoney1: '',
       checkData: [],
@@ -13415,7 +13407,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -14112,6 +14104,52 @@ var FormField = {
         clear: true,
         value: item.amount_tax,
         placeholder: "\u81EA\u52A8\u8BA1\u7B97"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u5DF2\u5165\u5E93\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_rk,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u603B\u8BA1\u5212\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_zong,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
       })))))))))))));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "table-actions"
@@ -14263,7 +14301,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976235
+      // 1650424712094
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -14852,7 +14890,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -15975,7 +16013,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -16414,7 +16452,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976277
+      // 1650424712054
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -17750,7 +17788,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -18188,7 +18226,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976241
+      // 1650424712035
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -18955,7 +18993,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -19282,7 +19320,7 @@ var FormField = {
         }
       }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["DatePicker"], {
         mode: "date",
-        title: "Select Date",
+        title: "\u9009\u62E9\u65F6\u95F4",
         extra: "Optional",
         value: _this_1.state.datadate1,
         onChange: function onChange(date) {
@@ -19313,7 +19351,7 @@ var FormField = {
         placeholder: "\u8BF7\u9009\u62E9"
       })))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["DatePicker"], {
         mode: "date",
-        title: "Select Date",
+        title: "\u9009\u62E9\u65F6\u95F4",
         extra: "Optional",
         value: _this_1.state.datadate2,
         onChange: function onChange(date) {
@@ -19538,6 +19576,14 @@ var FormField = {
     var _this = this;
 
     return {
+      onExtraClick: function onExtraClick(index, typename) {
+        var arr = _this.state.materialList;
+        arr[index][typename] = '';
+
+        _this.setState({
+          materialList: __spreadArray([], arr, true)
+        });
+      },
       checkClick: function checkClick(item) {
         console.log('0000005');
         var cDataid = [item.id];
@@ -19840,43 +19886,35 @@ var FormField = {
         var days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000);
         return days + 1;
       },
-      onChangedata1: function onChangedata1(data, index) {
+      onChangedata1: function onChangedata1(data, index, typename) {
         var newdata = new Date(data);
         var newindex = index;
         var datetime = newdata.getFullYear() + '-' + (newdata.getMonth() + 1) + '-' + newdata.getDate();
         var arr = _this.state.materialList;
-        arr[index].plan_in_riqi = datetime; // _this.setState({ materialList: [...arr] });
+        arr[index][typename] = datetime;
 
         if (arr[index].plan_in_riqi && arr[index].plan_out_riqi) {
-          var timenum_1 = _this.methods().getDaysBetween(arr[index].plan_in_riqi, arr[index].plan_out_riqi);
+          var timenum = _this.methods().getDaysBetween(arr[index].plan_in_riqi, arr[index].plan_out_riqi);
 
-          if (timenum_1 === 0) {
-            antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info('请先选择正确的日期', 1);
+          if (timenum === 0) {
+            return antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info('请先选择正确的日期', 1);
 
             _this.setState({
-              datenum: timenum_1
+              datenum: timenum
             });
           } else {
+            if (arr[newindex].zl_number && arr[newindex].price) {
+              arr[newindex].subtotal = (arr[newindex].zl_number * arr[newindex].price * Number(timenum)).toFixed(2);
+            } else {
+              arr[newindex].subtotal = 0;
+            }
+
             _this.setState({
-              datenum: timenum_1,
+              datenum: timenum,
               materialList: __spreadArray([], arr, true)
-            }, function () {
-              if (arr[newindex].zl_number && arr[newindex].price) {
-                arr[newindex].subtotal = (arr[newindex].zl_number * arr[newindex].price * Number(timenum_1)).toFixed(2);
-              } else {
-                arr[newindex].subtotal = 0;
-              }
             });
           }
         }
-
-        console.log(datetime, index);
-      },
-      onChangedata2: function onChangedata2(data, index) {
-        var newdata = new Date(data);
-        var datetime = newdata.getFullYear() + '-' + (newdata.getMonth() + 1) + '-' + newdata.getDate();
-        var arr = _this.state.materialList;
-        arr[index].plan_out_riqi = datetime;
 
         _this.setState({
           materialList: __spreadArray([], arr, true)
@@ -19884,6 +19922,19 @@ var FormField = {
 
         console.log(datetime, index);
       },
+      //   onChangedata2(data, index) {
+      //     const newdata = new Date(data);
+      //     const datetime =
+      //       newdata.getFullYear() +
+      //       '-' +
+      //       (newdata.getMonth() + 1) +
+      //       '-' +
+      //       newdata.getDate();
+      //     const arr = _this.state.materialList;
+      //     arr[index].typename = datetime;
+      //     _this.setState({ materialList: [...arr] });
+      //     console.log(datetime, index);
+      //   },
       handleAddVisible: function handleAddVisible(visible) {
         _this.setState({
           popUpVisible: visible
@@ -20358,11 +20409,11 @@ var FormField = {
         placeholder: "\u81EA\u52A8\u83B7\u53D6"
       }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["DatePicker"], {
         mode: "date",
-        title: "Select Date",
+        title: "\u9009\u62E9\u65F6\u95F4",
         extra: "Optional",
         value: _this_1.state.datadate1,
         onChange: function onChange(date) {
-          return _this_1.methods().onChangedata1(date, index);
+          return _this_1.methods().onChangedata1(date, index, 'plan_in_riqi');
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "field-wrapper"
@@ -20384,16 +20435,17 @@ var FormField = {
         className: "input-wrapper"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
         editable: false,
-        clear: true,
+        extra: "x",
+        onExtraClick: _this_1.methods().onExtraClick.bind(_this_1, index, 'plan_in_riqi'),
         value: item.plan_in_riqi,
         placeholder: "\u8BF7\u9009\u62E9"
       })))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["DatePicker"], {
         mode: "date",
-        title: "Select Date",
+        title: "\u9009\u62E9\u65F6\u95F4",
         extra: "Optional",
         value: _this_1.state.datadate2,
         onChange: function onChange(date) {
-          return _this_1.methods().onChangedata2(date, index);
+          return _this_1.methods().onChangedata1(date, index, 'plan_out_riqi');
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "field-wrapper"
@@ -20415,7 +20467,8 @@ var FormField = {
         className: "input-wrapper"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
         editable: false,
-        clear: true,
+        extra: "x",
+        onExtraClick: _this_1.methods().onExtraClick.bind(_this_1, index, 'plan_out_riqi'),
         value: item.plan_out_riqi,
         placeholder: "\u8BF7\u9009\u62E9"
       })))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -21095,7 +21148,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -21419,7 +21472,7 @@ var FormField = {
         placeholder: "\u81EA\u52A8\u83B7\u53D6"
       }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["DatePicker"], {
         mode: "date",
-        title: "Select Date",
+        title: "\u9009\u62E9\u65F6\u95F4",
         extra: "Optional",
         value: _this_1.state.datadate1,
         onChange: function onChange(date) {
@@ -22722,7 +22775,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976262
+      // 1650424712071
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -23636,7 +23689,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -24602,7 +24655,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -25474,7 +25527,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -25986,6 +26039,12 @@ var FormField = {
       }, {
         title: '含税金额(元)',
         dataIndex: 'amount_tax'
+      }, {
+        title: '已入库量',
+        dataIndex: 'quantity_rk'
+      }, {
+        title: '总计划量',
+        dataIndex: 'quantity_zong'
       }],
       Inputmoney1: '',
       cascadeValue: [],
@@ -26370,7 +26429,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -26953,6 +27012,52 @@ var FormField = {
         clear: true,
         value: item.amount_tax,
         placeholder: "\u81EA\u52A8\u8BA1\u7B97"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u5DF2\u5165\u5E93\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_rk,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u603B\u8BA1\u5212\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_zong,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
       })))))))))))));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "table-actions"
@@ -27446,7 +27551,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -28617,7 +28722,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -29519,7 +29624,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -30073,6 +30178,12 @@ var FormField = {
       }, {
         title: '含税金额(元)',
         dataIndex: 'amount_tax'
+      }, {
+        title: '已入库量',
+        dataIndex: 'quantity_rk'
+      }, {
+        title: '总计划量',
+        dataIndex: 'quantity_zong'
       }],
       Inputmoney1: '',
       Inputmoney2: '',
@@ -31075,6 +31186,52 @@ var FormField = {
         clear: true,
         value: item.amount_tax,
         placeholder: "\u81EA\u52A8\u8BA1\u7B97"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u5DF2\u5165\u5E93\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_rk,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u603B\u8BA1\u5212\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_zong,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
       })))))))))))));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "table-actions"
@@ -31226,7 +31383,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976253
+      // 1650424712066
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -31721,6 +31878,12 @@ var FormField = {
       }, {
         title: '含税金额(元)',
         dataIndex: 'amount_tax'
+      }, {
+        title: '已入库量',
+        dataIndex: 'quantity_rk'
+      }, {
+        title: '总计划量',
+        dataIndex: 'quantity_zong'
       }],
       Inputmoney1: '',
       checkData: [],
@@ -32102,7 +32265,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -32724,6 +32887,52 @@ var FormField = {
         clear: true,
         value: item.amount_tax,
         placeholder: "\u81EA\u52A8\u8BA1\u7B97"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u5DF2\u5165\u5E93\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_rk,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
+      }))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-group m-group-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field m-field-mobile m-select-field"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-head"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-label"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\u603B\u8BA1\u5212\u91CF"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "m-field-content left"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "input-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd_mobile__WEBPACK_IMPORTED_MODULE_0__["InputItem"], {
+        editable: false,
+        clear: true,
+        value: item.quantity_zong,
+        placeholder: "\u81EA\u52A8\u83B7\u53D6"
       })))))))))))));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "table-actions"
@@ -33261,7 +33470,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -34194,7 +34403,7 @@ var FormField = {
       }
 
       if (res.message) {
-        Toast.info(res.message, 1);
+        antd_mobile__WEBPACK_IMPORTED_MODULE_0__["Toast"].info(res.message, 1);
       }
     });
   },
@@ -34984,7 +35193,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976273
+      // 1650424712081
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35253,7 +35462,7 @@ var FormField = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976229
+      // 1650424712050
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -35767,7 +35976,7 @@ var SwapDemoSuite = {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1650260976183
+      // 1650424712010
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.i, {"esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);

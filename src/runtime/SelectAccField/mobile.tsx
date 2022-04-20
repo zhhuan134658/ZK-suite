@@ -98,31 +98,31 @@ const FormField: ISwapFormField = {
       });
     });
   },
-  fieldDidUpdate() {
-    if (!this.props.runtimeProps.viewMode) {
-      console.log('发起页：fieldDidUpdate');
+  //   fieldDidUpdate() {
+  //     if (!this.props.runtimeProps.viewMode) {
+  //       console.log('发起页：fieldDidUpdate');
 
-      const editData = {
-        hanmoney: 0,
-        nomoney: 0,
-        detailname: '',
-        detailedData: [], //物资明细
-      };
-      if (this.state.Inputmoney1) {
-        editData.hanmoney = Number(this.state.Inputmoney1);
-      }
-      if (this.state.Inputmoney2) {
-        editData.nomoney = Number(this.state.Inputmoney2);
-      }
-      editData.detailname = this.state.chenkdata;
-      editData.detailedData = this.state.materialList;
-      const { form } = this.props;
-      form.setFieldValue('TestPur', editData);
-      form.setFieldExtendValue('TestPur', {
-        data: editData,
-      });
-    }
-  },
+  //       const editData = {
+  //         hanmoney: 0,
+  //         nomoney: 0,
+  //         detailname: '',
+  //         detailedData: [], //物资明细
+  //       };
+  //       if (this.state.inputvalue) {
+  //         editData.hanmoney = Number(this.state.inputvalue);
+  //       }
+  //       if (this.state.Inputmoney2) {
+  //         editData.nomoney = Number(this.state.Inputmoney2);
+  //       }
+  //         editData.detailname = this.state.chenkdata;
+  //         editData.detailedData = this.state.materialList;
+  //       const { form } = this.props;
+  //       form.setFieldValue('TestPur', editData);
+  //       form.setFieldExtendValue('TestPur', {
+  //         data: editData,
+  //       });
+  //     }
+  //   },
   fieldRender() {
     // fix in codepen
     const { form } = this.props;

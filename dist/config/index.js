@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "1b1e9253b3c4edb050ba";
+/******/ 	var hotCurrentHash = "7e13bda00625edf6891c";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -902,7 +902,7 @@ __webpack_require__.r(__webpack_exports__);
       "bizAlias": "Moneytest",
       "id": "test",
       "placeholder": "请输入",
-      "label": "金额（元）大写",
+      "label": "金额1（元）大写",
       "notUpper": "0"
     }
   }, {

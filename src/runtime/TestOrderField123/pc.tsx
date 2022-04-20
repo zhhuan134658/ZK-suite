@@ -730,8 +730,8 @@ const FormField: ISwapFormField = {
         dataIndex: 'quantity_rk',
 
         render: (_, record: any) => (
-          <Tooltip placement="topLeft" title={record.quantity_sq}>
-            <span>{record.quantity_sq}</span>
+          <Tooltip placement="topLeft" title={record.quantity_rk}>
+            <span>{record.quantity_rk}</span>
           </Tooltip>
         ),
       },

@@ -100,8 +100,13 @@ const ImportDialog: React.FC<{
       if (item.dataIndex === 'operation') {
         columns.splice(index, 1);
       }
+      if (item.editable) {
+        item.editable = false;
+      }
     });
     columns.push(errorColumn);
+    console.log('上传的columns', columns);
+
     setProcessedColumns(columns);
     APIPromise.then(res => {
       console.info(

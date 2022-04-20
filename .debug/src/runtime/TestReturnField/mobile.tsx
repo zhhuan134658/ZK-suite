@@ -1,5 +1,5 @@
 //import { Tree } from 'antd';
-import { Drawer, InputItem, SearchBar, Tabs } from 'antd-mobile';
+import { Drawer, InputItem, SearchBar, Tabs, Toast } from 'antd-mobile';
 import React from 'react';
 import { createPortal } from 'react-dom';
 import {
@@ -69,6 +69,14 @@ const FormField: ISwapFormField = {
         {
           title: '含税金额(元)',
           dataIndex: 'amount_tax',
+        },
+        {
+          title: '已入库量',
+          dataIndex: 'quantity_rk',
+        },
+        {
+          title: '总计划量',
+          dataIndex: 'quantity_zong',
         },
       ],
       Inputmoney1: '',
@@ -1122,6 +1130,60 @@ const FormField: ISwapFormField = {
                                             clear
                                             value={item.amount_tax}
                                             placeholder="自动计算"
+                                          ></InputItem>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="field-wrapper">
+                              <div className="m-group m-group-mobile">
+                                <div className="m-field-wrapper">
+                                  <div className="m-field m-field-mobile m-select-field">
+                                    <div className="m-field-head">
+                                      <div className="m-field-label">
+                                        <span>已入库量</span>
+                                      </div>
+                                    </div>
+                                    <div className="m-field-box">
+                                      <div className="m-field-content left">
+                                        <div className="input-wrapper">
+                                          <InputItem
+                                            editable={false}
+                                            clear
+                                            value={item.quantity_rk}
+                                            placeholder="自动获取"
+                                          ></InputItem>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="field-wrapper">
+                              <div className="m-group m-group-mobile">
+                                <div className="m-field-wrapper">
+                                  <div className="m-field m-field-mobile m-select-field">
+                                    <div className="m-field-head">
+                                      <div className="m-field-label">
+                                        <span>总计划量</span>
+                                      </div>
+                                    </div>
+                                    <div className="m-field-box">
+                                      <div className="m-field-content left">
+                                        <div className="input-wrapper">
+                                          <InputItem
+                                            editable={false}
+                                            clear
+                                            value={item.quantity_zong}
+                                            placeholder="自动获取"
                                           ></InputItem>
                                         </div>
                                       </div>

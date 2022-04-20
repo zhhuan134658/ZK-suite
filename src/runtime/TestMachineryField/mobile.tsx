@@ -766,7 +766,7 @@ const FormField: ISwapFormField = {
                           <div>
                             <DatePicker
                               mode="date"
-                              title="Select Date"
+                              title="选择时间"
                               extra="Optional"
                               value={this.state.datadate1}
                               onChange={date =>

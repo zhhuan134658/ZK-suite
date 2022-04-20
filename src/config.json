@@ -13,7 +13,7 @@
       "props": {
         "id": "test",
         "placeholder": "请输入",
-        "label": "金额（元）大写",
+        "label": "金额1（元）大写",
         "notUpper": "0"
       }
     },

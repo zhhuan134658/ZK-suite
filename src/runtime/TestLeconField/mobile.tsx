@@ -113,6 +113,12 @@ const FormField: ISwapFormField = {
     const _this = this;
 
     return {
+      onExtraClick(index, typename) {
+        const arr = _this.state.materialList;
+        arr[index][typename] = '';
+        _this.setState({ materialList: [...arr] });
+      },
+
       checkClick(item: any) {
         console.log('0000005');
         const cDataid = [item.id];
@@ -390,7 +396,7 @@ const FormField: ISwapFormField = {
         const days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000);
         return days + 1;
       },
-      onChangedata1(data, index) {
+      onChangedata1(data, index, typename) {
         const newdata = new Date(data);
         const newindex = index;
         const datetime =
@@ -400,45 +406,46 @@ const FormField: ISwapFormField = {
           '-' +
           newdata.getDate();
         const arr = _this.state.materialList;
-        arr[index].plan_in_riqi = datetime;
-        // _this.setState({ materialList: [...arr] });
+        arr[index][typename] = datetime;
+
         if (arr[index].plan_in_riqi && arr[index].plan_out_riqi) {
           const timenum = _this
             .methods()
             .getDaysBetween(arr[index].plan_in_riqi, arr[index].plan_out_riqi);
           if (timenum === 0) {
-            Toast.info('请先选择正确的日期', 1);
+            return Toast.info('请先选择正确的日期', 1);
             _this.setState({ datenum: timenum });
           } else {
-            _this.setState({ datenum: timenum, materialList: [...arr] }, () => {
-              if (arr[newindex].zl_number && arr[newindex].price) {
-                arr[newindex].subtotal = (
-                  arr[newindex].zl_number *
-                  arr[newindex].price *
-                  Number(timenum)
-                ).toFixed(2);
-              } else {
-                arr[newindex].subtotal = 0;
-              }
-            });
+            if (arr[newindex].zl_number && arr[newindex].price) {
+              arr[newindex].subtotal = (
+                arr[newindex].zl_number *
+                arr[newindex].price *
+                Number(timenum)
+              ).toFixed(2);
+            } else {
+              arr[newindex].subtotal = 0;
+            }
+            _this.setState({ datenum: timenum, materialList: [...arr] });
           }
         }
-        console.log(datetime, index);
-      },
-      onChangedata2(data, index) {
-        const newdata = new Date(data);
-
-        const datetime =
-          newdata.getFullYear() +
-          '-' +
-          (newdata.getMonth() + 1) +
-          '-' +
-          newdata.getDate();
-        const arr = _this.state.materialList;
-        arr[index].plan_out_riqi = datetime;
         _this.setState({ materialList: [...arr] });
         console.log(datetime, index);
       },
+      //   onChangedata2(data, index) {
+      //     const newdata = new Date(data);
+
+      //     const datetime =
+      //       newdata.getFullYear() +
+      //       '-' +
+      //       (newdata.getMonth() + 1) +
+      //       '-' +
+      //       newdata.getDate();
+      //     const arr = _this.state.materialList;
+      //     arr[index].typename = datetime;
+
+      //     _this.setState({ materialList: [...arr] });
+      //     console.log(datetime, index);
+      //   },
       handleAddVisible(visible: boolean) {
         _this.setState({
           popUpVisible: visible,
@@ -932,11 +939,15 @@ const FormField: ISwapFormField = {
                           <div>
                             <DatePicker
                               mode="date"
-                              title="Select Date"
+                              title="选择时间"
                               extra="Optional"
                               value={this.state.datadate1}
                               onChange={date =>
-                                this.methods().onChangedata1(date, index)
+                                this.methods().onChangedata1(
+                                  date,
+                                  index,
+                                  'plan_in_riqi',
+                                )
                               }
                             >
                               <div className="field-wrapper">
@@ -954,7 +965,12 @@ const FormField: ISwapFormField = {
                                           <div className="input-wrapper">
                                             <InputItem
                                               editable={false}
-                                              clear
+                                              extra="x"
+                                              onExtraClick={this.methods().onExtraClick.bind(
+                                                this,
+                                                index,
+                                                'plan_in_riqi',
+                                              )}
                                               value={item.plan_in_riqi}
                                               placeholder="请选择"
                                             ></InputItem>
@@ -970,11 +986,15 @@ const FormField: ISwapFormField = {
                           <div>
                             <DatePicker
                               mode="date"
-                              title="Select Date"
+                              title="选择时间"
                               extra="Optional"
                               value={this.state.datadate2}
                               onChange={date =>
-                                this.methods().onChangedata2(date, index)
+                                this.methods().onChangedata1(
+                                  date,
+                                  index,
+                                  'plan_out_riqi',
+                                )
                               }
                             >
                               <div className="field-wrapper">
@@ -992,7 +1012,12 @@ const FormField: ISwapFormField = {
                                           <div className="input-wrapper">
                                             <InputItem
                                               editable={false}
-                                              clear
+                                              extra="x"
+                                              onExtraClick={this.methods().onExtraClick.bind(
+                                                this,
+                                                index,
+                                                'plan_out_riqi',
+                                              )}
                                               value={item.plan_out_riqi}
                                               placeholder="请选择"
                                             ></InputItem>

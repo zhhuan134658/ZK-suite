@@ -703,7 +703,7 @@ const FormField: ISwapFormField = {
               </div>
               <div style={{ color: '#409EFF', cursor: 'pointer' }}>
                 <Popconfirm
-                  title="是否重置？重置后明细表格将清空。"
+                  title="是否重置？重置后明细表格将清空"
                   onConfirm={this.methods().ResetClick}
                   okText="是"
                   cancelText="否"
