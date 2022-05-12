@@ -17,7 +17,7 @@ const SwapDemoSuite: ISwapDemoSuite = {
     const outPeopleField = form.getFieldInstance('outPeople');
     console.log(IsAutoOutExtendValue);
     if (IsAutoOutExtendValue?.key === 'option_2') {
-      outPeopleField.hide();
+    
     }
 
     this.formDataLinkagehandler();
@@ -34,18 +34,14 @@ const SwapDemoSuite: ISwapDemoSuite = {
     form.onFieldExtendValueChange('IsAutoOut', extendValue => {
       console.log(extendValue);
       if (extendValue.key === '2') {
-        outPeopleField.hide();
+   
       } else {
-        outPeopleField.show();
+        // outPeopleField.show();
       }
     });
     //监听项目类型
     const SelectHeField = form.getFieldInstance('SelectHe');
 
-    const SelectLease = form.getFieldInstance('SelectLease');
-
-    console.log('test12345', SelectLease, SelectHeField);
-    SelectLease.hide();
     form.onFieldExtendValueChange('RadioField', extendValue => {
       form.setFieldValue('Selectbaopro', '');
       form.setFieldValue('SelectHe', '');
@@ -54,12 +50,12 @@ const SwapDemoSuite: ISwapDemoSuite = {
         extendValue.label === '投标保证金支出' ||
         extendValue.label === '投标保证金退回'
       ) {
-        SelectHeField.hide();
+
         const newdate = { isProject: '' };
         newdate.isProject = '2';
         this.asyncSetFieldProps(newdate, 'Selectbaopro');
       } else {
-        SelectHeField.show();
+        // SelectHeField.show();
         const newdate = { isProject: '' };
         newdate.isProject = '1';
         this.asyncSetFieldProps(newdate, 'Selectbaopro');

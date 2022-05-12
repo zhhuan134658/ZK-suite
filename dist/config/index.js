@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "7e13bda00625edf6891c";
+/******/ 	var hotCurrentHash = "545d9ea6a35d8e1cdb9a";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -891,8 +891,8 @@ __webpack_require__.r(__webpack_exports__);
   "description": "筑快OA 2.0测试版本DEMO_Rest",
   "icon": "",
   "props": {
-    "bizType": "isv.zhukuai.zkgl",
-    "bizAlias": "isv.zhukuai.zkgl",
+    "bizType": "isv.zhukuai.warehousing",
+    "bizAlias": "isv.zhukuai.warehousing",
     "extract": true,
     "isThirdSuite": true
   },

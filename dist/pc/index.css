@@ -1,41 +1,41 @@
-.isvzhukuaizkgl .my-drawer {
+.isvzhukuaiwarehousing .my-drawer {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
   position: fixed;
   z-index: 100;
 }
-.isvzhukuaizkgl .my-drawer .am-drawer-sidebar {
+.isvzhukuaiwarehousing .my-drawer .am-drawer-sidebar {
   height: 100%;
   background-color: #ffffff;
 }
-.isvzhukuaizkgl .noWrap .am-list-content {
+.isvzhukuaiwarehousing .noWrap .am-list-content {
   white-space: normal !important;
 }
-.isvzhukuaizkgl .pc-custom-field-wrap {
+.isvzhukuaiwarehousing .pc-custom-field-wrap {
   padding-bottom: 8px;
   padding-top: 8px;
   width: 100%;
 }
-.isvzhukuaizkgl .pc-custom-field-wrap .label {
+.isvzhukuaiwarehousing .pc-custom-field-wrap .label {
   margin-bottom: 10px;
   margin-left: -10px;
 }
-.isvzhukuaizkgl .newside_new {
+.isvzhukuaiwarehousing .newside_new {
   background: #fff;
   max-height: 400px;
   overflow-y: scroll;
 }
-.isvzhukuaizkgl .editable-cell {
+.isvzhukuaiwarehousing .editable-cell {
   position: relative;
 }
-.isvzhukuaizkgl .ant-table-cell {
+.isvzhukuaiwarehousing .ant-table-cell {
   height: 45px;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 45px;
 }
-.isvzhukuaizkgl .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .editable-cell-value-wrap {
   height: 45px;
   line-height: 45px;
   padding-left: 16px !important;
@@ -46,7 +46,7 @@
   margin-right: -16px;
   cursor: pointer;
 }
-.isvzhukuaizkgl .editable-cell-value-input {
+.isvzhukuaiwarehousing .editable-cell-value-input {
   height: 45px;
   line-height: 45px;
   width: 100%;
@@ -54,91 +54,91 @@
   margin-left: -16px;
   margin-right: -16px;
 }
-.isvzhukuaizkgl .editable-row:hover .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .editable-row:hover .editable-cell-value-wrap {
   padding: 0;
   border-radius: 0px !important;
   border: none !important;
   -webkit-box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
           box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
 }
-.isvzhukuaizkgl [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+.isvzhukuaiwarehousing [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
   outline: slateblue;
 }
-.isvzhukuaizkgl .ant-input-group-wrapper {
+.isvzhukuaiwarehousing .ant-input-group-wrapper {
   background: #fafafa;
   border-radius: 2px;
 }
-.isvzhukuaizkgl .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+.isvzhukuaiwarehousing .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
   width: 99%;
 }
-.isvzhukuaizkgl .field-wrapper .label {
+.isvzhukuaiwarehousing .field-wrapper .label {
   margin-top: 10px;
 }
-.isvzhukuaizkgl .sre-table-add-button {
+.isvzhukuaiwarehousing .sre-table-add-button {
   display: none;
 }
-.isvzhukuaizkgl .table-operation a:nth-child(2) {
+.isvzhukuaiwarehousing .table-operation a:nth-child(2) {
   display: none;
 }
-.isvzhukuaizkgl .header_tab_class {
+.isvzhukuaiwarehousing .header_tab_class {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.isvzhukuaizkgl .SelectProField_class .pc-custom-field-wrap {
+.isvzhukuaiwarehousing .SelectProField_class .pc-custom-field-wrap {
   padding-bottom: 8px;
   padding-top: 8px;
 }
-.isvzhukuaizkgl .SelectProField_class .pc-custom-field-wrap .label {
+.isvzhukuaiwarehousing .SelectProField_class .pc-custom-field-wrap .label {
   margin-bottom: 10px;
   margin-left: -10px;
 }
-.isvzhukuaizkgl .SelectProField_class .newside_new {
+.isvzhukuaiwarehousing .SelectProField_class .newside_new {
   background: #fff;
   height: 680px;
   overflow-y: scroll;
 }
 
-.isvzhukuaizkgl .SelectProtwoField_class .pc-custom-field-wrap {
+.isvzhukuaiwarehousing .SelectProtwoField_class .pc-custom-field-wrap {
   padding-bottom: 8px;
   padding-top: 8px;
 }
-.isvzhukuaizkgl .SelectProtwoField_class .pc-custom-field-wrap .label {
+.isvzhukuaiwarehousing .SelectProtwoField_class .pc-custom-field-wrap .label {
   margin-bottom: 10px;
   margin-left: -10px;
 }
-.isvzhukuaizkgl .SelectProtwoField_class .newside_new {
+.isvzhukuaiwarehousing .SelectProtwoField_class .newside_new {
   background: #fff;
   height: 680px;
   overflow-y: scroll;
 }
 
-.isvzhukuaizkgl .TestCollectionField_class .pc-custom-field-wrap {
+.isvzhukuaiwarehousing .TestCollectionField_class .pc-custom-field-wrap {
   padding-bottom: 8px;
   padding-top: 8px;
   width: 100%;
 }
-.isvzhukuaizkgl .TestCollectionField_class .pc-custom-field-wrap .label {
+.isvzhukuaiwarehousing .TestCollectionField_class .pc-custom-field-wrap .label {
   margin-bottom: 10px;
   margin-left: -10px;
 }
-.isvzhukuaizkgl .TestCollectionField_class .newside_new {
+.isvzhukuaiwarehousing .TestCollectionField_class .newside_new {
   background: #fff;
   max-height: 400px;
   overflow-y: scroll;
 }
-.isvzhukuaizkgl .TestCollectionField_class .editable-cell {
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-cell {
   position: relative;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-table-cell {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-table-cell {
   height: 45px;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 45px;
 }
-.isvzhukuaizkgl .TestCollectionField_class .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-cell-value-wrap {
   height: 45px;
   line-height: 45px;
   padding-left: 16px !important;
@@ -149,7 +149,7 @@
   margin-right: -16px;
   cursor: pointer;
 }
-.isvzhukuaizkgl .TestCollectionField_class .editable-cell-value-input {
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-cell-value-input {
   height: 45px;
   line-height: 45px;
   width: 100%;
@@ -157,37 +157,37 @@
   margin-left: -16px;
   margin-right: -16px;
 }
-.isvzhukuaizkgl .TestCollectionField_class .editable-row:hover .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .TestCollectionField_class .editable-row:hover .editable-cell-value-wrap {
   padding: 0;
   border-radius: 0px !important;
   border: none !important;
   -webkit-box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
           box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
 }
-.isvzhukuaizkgl .TestCollectionField_class [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .TestCollectionField_class [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
   outline: slateblue;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-input-group-wrapper {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper {
   background: #fafafa;
   border-radius: 2px;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
   width: 99%;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-input-group-wrapper {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper {
   background: #fafafa;
   border-radius: 2px;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
   width: 99%;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-tabs .ant-tabs-nav {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-tabs .ant-tabs-nav {
   width: 100%;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-tabs .ant-tabs-nav .ant-tabs-nav-list {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-tabs .ant-tabs-nav .ant-tabs-nav-list {
   width: 100%;
 }
-.isvzhukuaizkgl .TestCollectionField_class .ant-tabs .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
+.isvzhukuaiwarehousing .TestCollectionField_class .ant-tabs .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
   width: 50%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -195,30 +195,30 @@
           justify-content: center;
 }
 
-.isvzhukuaizkgl .TestSheField_class .pc-custom-field-wrap {
+.isvzhukuaiwarehousing .TestSheField_class .pc-custom-field-wrap {
   padding-bottom: 8px;
   padding-top: 8px;
   width: 100%;
 }
-.isvzhukuaizkgl .TestSheField_class .pc-custom-field-wrap .label {
+.isvzhukuaiwarehousing .TestSheField_class .pc-custom-field-wrap .label {
   margin-bottom: 10px;
   margin-left: -10px;
 }
-.isvzhukuaizkgl .TestSheField_class .newside_new {
+.isvzhukuaiwarehousing .TestSheField_class .newside_new {
   background: #fff;
   max-height: 400px;
   overflow-y: scroll;
 }
-.isvzhukuaizkgl .TestSheField_class .editable-cell {
+.isvzhukuaiwarehousing .TestSheField_class .editable-cell {
   position: relative;
 }
-.isvzhukuaizkgl .TestSheField_class .ant-table-cell {
+.isvzhukuaiwarehousing .TestSheField_class .ant-table-cell {
   height: 45px;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 45px;
 }
-.isvzhukuaizkgl .TestSheField_class .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .TestSheField_class .editable-cell-value-wrap {
   height: 45px;
   line-height: 45px;
   padding-left: 16px !important;
@@ -229,7 +229,7 @@
   margin-right: -16px;
   cursor: pointer;
 }
-.isvzhukuaizkgl .TestSheField_class .editable-cell-value-input {
+.isvzhukuaiwarehousing .TestSheField_class .editable-cell-value-input {
   height: 45px;
   line-height: 45px;
   width: 100%;
@@ -237,21 +237,21 @@
   margin-left: -16px;
   margin-right: -16px;
 }
-.isvzhukuaizkgl .TestSheField_class .editable-row:hover .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .TestSheField_class .editable-row:hover .editable-cell-value-wrap {
   padding: 0;
   border-radius: 0px !important;
   border: none !important;
   -webkit-box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
           box-shadow: inset 0px 0px 2px 0px rgba(3, 137, 255, 0.5);
 }
-.isvzhukuaizkgl .TestSheField_class [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+.isvzhukuaiwarehousing .TestSheField_class [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
   outline: slateblue;
 }
-.isvzhukuaizkgl .TestSheField_class .ant-input-group-wrapper {
+.isvzhukuaiwarehousing .TestSheField_class .ant-input-group-wrapper {
   background: #fafafa;
   border-radius: 2px;
 }
-.isvzhukuaizkgl .TestSheField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
+.isvzhukuaiwarehousing .TestSheField_class .ant-input-group-wrapper .ant-input-wrapper .ant-input-affix-wrapper {
   width: 99%;
 }
 

@@ -395,6 +395,7 @@ const FormField: ISwapFormField = {
   },
   fieldDidUpdate() {
     if (!this.props.runtimeProps.viewMode) {
+      const { form } = this.props;
       //console.log('发起页：fieldDidUpdate');
       const editData = {
         hanmoney: 0,
@@ -404,6 +405,9 @@ const FormField: ISwapFormField = {
       };
       if (this.state.Inputmoney1) {
         editData.hanmoney = Number(this.state.Inputmoney1);
+        console.log('Inputmoney2', this.state.Inputmoney1);
+        form.setFieldValue('CaiConMoney', Number(this.state.Inputmoney1));
+        form.setFieldExtendValue('CaiConMoney', Number(this.state.Inputmoney1));
       }
       if (this.state.Inputmoney2) {
         editData.nomoney = Number(this.state.Inputmoney2);
@@ -415,7 +419,7 @@ const FormField: ISwapFormField = {
       const str1 = `不含税金额合计(元)：${this.state.Inputmoney2}\n 含税金额合计(元)：${this.state.Inputmoney1}`;
       const str = str2 + parsePrintString(newlistdata, purColumns, str1);
       console.log(str);
-      const { form } = this.props;
+
       form.setFieldValue('TestPur', str);
       form.setFieldExtendValue('TestPur', editData);
     }
@@ -904,7 +908,7 @@ const FormField: ISwapFormField = {
                   opacity: 0.15,
                 }}
               >
-                {'Version: 2.0.2-bate2'}
+                {'Version: 3.0.2'}
               </div>
               <div style={{ color: '#409EFF', cursor: 'pointer' }}>
                 <Popconfirm

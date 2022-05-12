@@ -83,7 +83,7 @@ export interface IFieldInstance {
     ) => void,
   ) => () => void;
   show: () => void;
-  hide: () => void;
+  //   hide: () => void;
   onValueChange: (
     fn: (
       value?: any,

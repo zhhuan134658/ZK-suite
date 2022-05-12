@@ -7,8 +7,8 @@ export default {
   "description": "筑快OA 2.0测试版本DEMO_Rest",
   "icon": "",
   "props": {
-    "bizType": "isv.zhukuai.zkgl",
-    "bizAlias": "isv.zhukuai.zkgl",
+    "bizType": "isv.zhukuai.warehousing",
+    "bizAlias": "isv.zhukuai.warehousing",
     "extract": true,
     "isThirdSuite": true
   },
@@ -230,6 +230,56 @@ export default {
         "disabled": true,
         "placeholder": "自动获取",
         "label": "分包合同金额",
+        "maxLength": "100"
+      }
+    },
+    {
+      "componentName": "CommonField",
+      "props": {
+        "bizAlias": "OtherContract",
+        "commonBizType": "SelectOtherField",
+        "required": false,
+        "placeholder": "请输入",
+        "label": "所属支出合同"
+      }
+    },
+    {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "OtherConmoney",
+        "disabled": true,
+        "placeholder": "自动获取",
+        "label": "合同金额",
+        "maxLength": "100"
+      }
+    },
+    {
+      "componentName": "CommonField",
+      "props": {
+        "bizAlias": "OtherZhisett",
+        "commonBizType": "SelectOtherZhiField",
+        "required": false,
+        "placeholder": "请输入",
+        "label": "关联其他支出合同/结算"
+      }
+    },
+    {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "OtherZhiConname",
+        "disabled": true,
+        "placeholder": "自动获取",
+        "label": "合同名称",
+        "maxLength": "100"
+      }
+    },
+    {
+      "componentName": "TextField",
+      "props": {
+        "bizAlias": "OtherZhiConmoney",
+        "disabled": true,
+        "placeholder": "自动获取",
+        "label": "合同金额",
         "maxLength": "100"
       }
     },
@@ -517,6 +567,51 @@ export default {
             "value": "否"
           }
         ]
+      }
+    },
+    {
+      "componentName": "MoneyField",
+      "props": {
+        "bizAlias": "CaiConMoney",
+        "placeholder": "请输入",
+        "label": "合同金额",
+        "notUpper": "1"
+      }
+    },
+    {
+      "componentName": "MoneyField",
+      "props": {
+        "bizAlias": "CaiDingMoney",
+        "placeholder": "请输入",
+        "label": "合同金额",
+        "notUpper": "1"
+      }
+    },
+    {
+      "componentName": "MoneyField",
+      "props": {
+        "bizAlias": "CaiJieMoney",
+        "placeholder": "请输入",
+        "label": "合同金额",
+        "notUpper": "1"
+      }
+    },
+    {
+      "componentName": "MoneyField",
+      "props": {
+        "bizAlias": "ZucMoney",
+        "placeholder": "请输入",
+        "label": "合同金额",
+        "notUpper": "1"
+      }
+    },
+    {
+      "componentName": "MoneyField",
+      "props": {
+        "bizAlias": "ZuJieMoney",
+        "placeholder": "请输入",
+        "label": "合同金额",
+        "notUpper": "1"
       }
     },
     {

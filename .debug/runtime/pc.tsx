@@ -1,5 +1,5 @@
 import React from "react";
-import SwapDemoSuite from "../src/runtime/pc";
+import SwapDemoSuite from "@/src/runtime/pc";
 import createReactClass from "create-react-class";
 import SelectProField from "./SelectProField/pc";
 import SelectProtwoField from "./SelectProtwoField/pc";
@@ -10,6 +10,8 @@ import SelectHeshouField from "./SelectHeshouField/pc";
 import SelectLeaseField from "./SelectLeaseField/pc";
 import SelectZuField from "./SelectZuField/pc";
 import SelectFenField from "./SelectFenField/pc";
+import SelectOtherField from "./SelectOtherField/pc";
+import SelectOtherZhiField from "./SelectOtherZhiField/pc";
 import SelectConField from "./SelectConField/pc";
 import SelectjiaField from "./SelectjiaField/pc";
 import SelectLaoField from "./SelectLaoField/pc";
@@ -66,11 +68,14 @@ const Suite = createReactClass({
   },
   render() {
     if (this.suiteRender) {
-      return this.suiteRender();
+      return (
+        <div className="isvzhukuaiwarehousing">
+          {this.suiteRender()}
+        </div>);
     }
 
     return (
-      <div className="isvzhukuaizkgl">
+      <div className="isvzhukuaiwarehousing">
         <div className="pc-runtime-wrap">
           {this.props.form.getFields().map(field => {
             if (field.props.commonBizType === 'SelectProField' || field.props.commonBizType === 'SelectPro') {
@@ -99,6 +104,12 @@ if (field.props.commonBizType === 'SelectZuField' || field.props.commonBizType =
             }
 if (field.props.commonBizType === 'SelectFenField' || field.props.commonBizType === 'SelectFen') {
               return <SelectFenField {...this.props}  bizAlias={field.props.bizAlias} />;
+            }
+if (field.props.commonBizType === 'SelectOtherField' || field.props.commonBizType === 'OtherContract') {
+              return <SelectOtherField {...this.props}  bizAlias={field.props.bizAlias} />;
+            }
+if (field.props.commonBizType === 'SelectOtherZhiField' || field.props.commonBizType === 'OtherZhisett') {
+              return <SelectOtherZhiField {...this.props}  bizAlias={field.props.bizAlias} />;
             }
 if (field.props.commonBizType === 'SelectConField' || field.props.commonBizType === 'SelectCon') {
               return <SelectConField {...this.props}  bizAlias={field.props.bizAlias} />;

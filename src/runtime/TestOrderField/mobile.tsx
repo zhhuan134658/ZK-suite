@@ -425,6 +425,7 @@ const FormField: ISwapFormField = {
   fieldDidUpdate() {
     if (!this.props.runtimeProps.viewMode) {
       console.log('发起页1：fieldDidUpdate');
+      const { form } = this.props;
       const editData = {
         hanmoney: 0,
         nomoney: 0,
@@ -433,6 +434,12 @@ const FormField: ISwapFormField = {
       };
       if (this.state.Inputmoney1) {
         editData.hanmoney = Number(this.state.Inputmoney1);
+        console.log('Inputmoney2', this.state.Inputmoney1);
+        form.setFieldValue('CaiDingMoney', Number(this.state.Inputmoney1));
+        form.setFieldExtendValue(
+          'CaiDingMoney',
+          Number(this.state.Inputmoney1),
+        );
       }
       if (this.state.Inputmoney2) {
         editData.nomoney = Number(this.state.Inputmoney2);
@@ -476,7 +483,6 @@ const FormField: ISwapFormField = {
       }
       const str = str2 + str0 + str1;
 
-      const { form } = this.props;
       form.setFieldValue('TestOrder', str);
       form.setFieldExtendValue('TestOrder', editData);
     }

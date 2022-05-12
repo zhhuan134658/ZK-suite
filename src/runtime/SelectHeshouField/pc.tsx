@@ -277,6 +277,7 @@ const FormField: ISwapFormField = {
     const promise = asyncSetProps(_this, data, bizAlias);
     promise.then(res => {
       const dataArray = res.dataArray;
+      console.log('dataArray', dataArray);
       if (dataArray.length === 0) {
         _this.setState({ Inputvalue: '暂无合同' });
         _this.props.form.setFieldValue('SelectHeshou', '暂无合同');

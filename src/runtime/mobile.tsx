@@ -15,12 +15,12 @@ const SwapDemoSuite: ISwapDemoSuite = {
 
     // const hiddenReason = form.getSuiteProp('hiddenReason');
     // form.setFieldValue('DateFielddate', new Date().toLocaleDateString());
-    const IsAutoOutExtendValue = form.getFieldExtendValue('IsAutoOut');
-    const outPeopleField = form.getFieldInstance('outPeople');
-    console.log(IsAutoOutExtendValue);
-    if (IsAutoOutExtendValue?.key === 'option_2') {
-      outPeopleField.hide();
-    }
+    // const IsAutoOutExtendValue = form.getFieldExtendValue('IsAutoOut');
+    // const outPeopleField = form.getFieldInstance('outPeople');
+    // console.log(IsAutoOutExtendValue);
+    // if (IsAutoOutExtendValue?.key === 'option_2') {
+
+    // }
 
     this.formDataLinkagehandler();
     // this.asyncSetFieldProps();
@@ -31,16 +31,16 @@ const SwapDemoSuite: ISwapDemoSuite = {
     const { form } = this.props;
 
     //出库人是否隐藏
-    const outPeopleField = form.getFieldInstance('outPeople');
+    // const outPeopleField = form.getFieldInstance('outPeople');
 
-    form.onFieldExtendValueChange('IsAutoOut', extendValue => {
-      console.log(extendValue);
-      if (extendValue.key === '2') {
-        outPeopleField.hide();
-      } else {
-        outPeopleField.show();
-      }
-    });
+    // form.onFieldExtendValueChange('IsAutoOut', extendValue => {
+    //   console.log(extendValue);
+    //   if (extendValue.key === '2') {
+
+    //   } else {
+    //     // outPeopleField.show();
+    //   }
+    // });
     //监听项目类型
     const SelectHeField = form.getFieldInstance('SelectHe');
 
@@ -49,12 +49,10 @@ const SwapDemoSuite: ISwapDemoSuite = {
         extendValue.label == '投标保证金支出' ||
         extendValue.label == '投标保证金退回'
       ) {
-        SelectHeField.hide();
         const newdate = { isProject: '' };
         newdate.isProject = '2';
         this.asyncSetFieldProps(newdate, 'Selectbaopro');
       } else {
-        SelectHeField.show();
         const newdate = { isProject: '' };
         newdate.isProject = '1';
         this.asyncSetFieldProps(newdate, 'Selectbaopro');
