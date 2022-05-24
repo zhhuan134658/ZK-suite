@@ -25,3 +25,11 @@ yarn-error.log*
 # test
 test-coverage
 +.testFiles
+
+
+# 忽略目录
+build/
+node_modules/
+**/*-min.js
+**/*.min.js
+coverage/
