@@ -802,7 +802,7 @@ const FormField: ISwapFormField = {
                   okText="是"
                   cancelText="否"
                 >
-                  <span>重置123明细</span>
+                  <span>重置明细</span>
                 </Popconfirm>
               </div>
             </div>

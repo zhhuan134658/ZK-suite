@@ -811,6 +811,12 @@ const FormField: ISwapFormField = {
     const onFinishFailed = (errorInfo: any) => {
       console.log('Failed:', errorInfo);
     };
+    const inputonChange = e => {
+      console.log('Change:', e.target.value);
+      this.setState({
+        Inputmoney1: e.target.value,
+      });
+    };
     //详情
     if (this.props.runtimeProps.viewMode) {
       let value = field.getExtendValue();
@@ -931,9 +937,18 @@ const FormField: ISwapFormField = {
           </div>
           <div>
             <Input
-              readOnly
               value={this.state.Inputmoney1}
-              placeholder="自动计算"
+              placeholder="自动计算可修改"
+              onChange={inputonChange}
+              //   onChange={e => {
+              //     console.log('888888', e);
+              //     if (e.target.value === '') {
+              //       this.setState({
+              //         Inputmoney1: e.target.value,
+              //       });
+              //       //   this.methods().handleSearch('', 'a');
+              //     }
+              //   }}
             />
           </div>
           <Modal

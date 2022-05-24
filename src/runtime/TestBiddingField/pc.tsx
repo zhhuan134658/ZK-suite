@@ -714,7 +714,7 @@ const FormField: ISwapFormField = {
             </div>
           </div>
           <div style={{ marginTop: '10px' }}>
-            {/* <Table
+            <Table
               scroll={{ x: '1500px' }}
               components={components}
               className="full-size-editable"
@@ -723,7 +723,7 @@ const FormField: ISwapFormField = {
               dataSource={dataSource}
               columns={columns as ColumnTypes}
               pagination={false}
-            /> */}
+            />
             <div
               style={{
                 display: 'flex',

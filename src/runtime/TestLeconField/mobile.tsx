@@ -1200,10 +1200,8 @@ const FormField: ISwapFormField = {
                     <div className="m-field-content left">
                       <div className="input-wrapper">
                         <InputItem
-                          editable={false}
                           value={this.state.Inputmoney1}
-                          placeholder="自动计算"
-                          readOnly
+                          placeholder="自动计算可修改"
                         ></InputItem>
                       </div>
                     </div>
